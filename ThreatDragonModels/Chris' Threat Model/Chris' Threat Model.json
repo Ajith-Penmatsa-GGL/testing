@@ -1,0 +1,16 @@
+{
+  "version": "2.5.0",
+  "summary": {
+    "title": "Chris' Threat Model",
+    "owner": "Chris",
+    "description": "A BS Threat Model;DropTable",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "John",
+    "threatTop": 0
+  }
+}
