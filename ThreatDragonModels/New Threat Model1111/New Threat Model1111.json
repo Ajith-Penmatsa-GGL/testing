@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "54670e14-1d18-4065-b7fe-12f7a4ee351c",
-            "zIndex": 1,
             "data": {
               "type": "tm.Store",
               "name": "Store",
@@ -156,6 +156,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -239,7 +240,6 @@
               ]
             },
             "id": "c13efbf7-b05f-486f-9c6f-f832f5b14f6b",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -273,6 +273,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -356,7 +357,6 @@
               ]
             },
             "id": "a0a6abdf-fddf-4ac7-ab00-78a899030d80",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -405,6 +405,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -488,7 +489,6 @@
               ]
             },
             "id": "f0f80ec5-0546-4e76-8590-01dd8f6ac6fa",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
