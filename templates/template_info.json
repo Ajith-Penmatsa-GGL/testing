@@ -3,7 +3,7 @@
     {
       "id": "c5ad8ea6-a9e1-4e3c-94c3-a70f09760030",
       "name": "Generic Content Management System (CMS)",
-      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/generic-cms",
+      "description": "This threat model has been provided by the OWASP Threat \nthreat-model-cookbook/Flow Diagram/generic-cms",
       "tags": [
         "full-stack",
         "CMS"
