@@ -38,6 +38,17 @@
         "AWS"
       ],
       "modelRef": "5d6247c9-b27d-4bdd-80a7-72fe82adedd0"
+    },
+    {
+      "id": "04d3520e-7b10-4a9c-9c1e-69af2e735d8e",
+      "name": "Internet of Things (IoT) Device",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/iot-device",
+      "tags": [
+        "IOT",
+        "Embedded",
+        "Electrical"
+      ],
+      "modelRef": "e28350ce-0516-4e4b-9808-009349c0837c"
     }
   ]
 }
