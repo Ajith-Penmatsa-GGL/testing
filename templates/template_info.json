@@ -2,7 +2,7 @@
   "templates": [
     {
       "id": "e4fe0dc9-8abb-4c43-bd7c-c69ecf4ff6e7",
-      "name": "Cryptocurrency Walle",
+      "name": "Cryptocurrency Wallet",
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
       "tags": [
         "Crypro",
