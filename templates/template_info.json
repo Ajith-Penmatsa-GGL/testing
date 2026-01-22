@@ -15,7 +15,10 @@
       "id": "92e5616e-a176-4443-abf5-14d1b3c80373",
       "name": "Demo Threat Model",
       "description": "A sample model of a web application, with a queue-decoupled background process.",
-      "tags": [],
+      "tags": [
+        "something",
+        "random"
+      ],
       "modelRef": "422a9537-6e40-45be-8c94-5d0cc755b47b"
     },
     {
