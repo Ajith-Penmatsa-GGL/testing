@@ -99,6 +99,13 @@
         "3-Tier"
       ],
       "modelRef": "dbf234e7-b4e8-4459-8f1c-b48b82967765"
+    },
+    {
+      "id": "ce4716ac-84a7-443b-8d12-0c3ae5a577d7",
+      "name": "New Threat Model 12345",
+      "description": "This is a testing model",
+      "tags": [],
+      "modelRef": "7f54ce01-64bd-4a0a-9476-f80a9d7f70e6"
     }
   ]
 }
