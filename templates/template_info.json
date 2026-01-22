@@ -99,17 +99,6 @@
         "3-Tier"
       ],
       "modelRef": "dbf234e7-b4e8-4459-8f1c-b48b82967765"
-    },
-    {
-      "id": "2b4cbc9e-385c-484b-b866-e5041d9d75ef",
-      "name": "Cryptocurrency Wallet",
-      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
-      "tags": [
-        "Crypro",
-        "Finance",
-        "Mobile-apps"
-      ],
-      "modelRef": "3d72a16d-773b-4440-a6dc-185916e78777"
     }
   ]
 }
