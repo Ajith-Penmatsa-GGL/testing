@@ -26,8 +26,7 @@
       "name": "Generic Content Management System (CMS)",
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/generic-cms",
       "tags": [
-        "CMS",
-        "Full-Stack"
+        "CMS"
       ],
       "modelRef": "30b6f3de-107d-4b5c-93c7-f9cac8704fa1"
     },
