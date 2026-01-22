@@ -45,7 +45,6 @@
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/iot-device",
       "tags": [
         "IOT",
-        "Embedded",
         "Electrical"
       ],
       "modelRef": "e28350ce-0516-4e4b-9808-009349c0837c"
