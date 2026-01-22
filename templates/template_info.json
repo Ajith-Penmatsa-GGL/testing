@@ -106,13 +106,6 @@
       "description": "This is a testing model",
       "tags": [],
       "modelRef": "7f54ce01-64bd-4a0a-9476-f80a9d7f70e6"
-    },
-    {
-      "id": "83d98b9a-724b-4390-abd1-cb4f65186c1d",
-      "name": "Demo Threat Model123",
-      "description": "A sample model of a web application, with a queue-decoupled background process.",
-      "tags": [],
-      "modelRef": "9b113465-469a-452e-a2d0-192b44650143"
     }
   ]
 }
