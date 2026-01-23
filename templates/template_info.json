@@ -63,6 +63,13 @@
       "description": "",
       "tags": [],
       "modelRef": "7243d889-12bb-49fb-aaeb-d5eca4a8e389"
+    },
+    {
+      "id": "289125ca-0469-48fd-a458-286ad0abd474",
+      "name": "New Threat Model 12345",
+      "description": "This is a testing model",
+      "tags": [],
+      "modelRef": "d79e4365-0f14-433b-a94c-0794303c9abe"
     }
   ]
 }
