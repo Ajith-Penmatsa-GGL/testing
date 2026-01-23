@@ -70,6 +70,17 @@
       "description": "This is a testing model",
       "tags": [],
       "modelRef": "d79e4365-0f14-433b-a94c-0794303c9abe"
+    },
+    {
+      "id": "0832c924-9d3c-46ba-965c-403dfcca8e4c",
+      "name": "Online Battle Royale Games",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/online-battleroyale-game",
+      "tags": [
+        "Battle-Royale",
+        "Games",
+        "Multi-Player"
+      ],
+      "modelRef": "3163dbdb-40d2-4634-988f-eabb0a12b6ba"
     }
   ]
 }
