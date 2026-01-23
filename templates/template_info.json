@@ -102,6 +102,17 @@
         "bussiness"
       ],
       "modelRef": "04e2aed7-50b0-4987-a30b-0670b61b41a3"
+    },
+    {
+      "id": "e07f158c-21bb-42a2-bd5d-227218a4ef8e",
+      "name": "Three Tier Web Application",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/IriusRisk/3-Tier-Web-App",
+      "tags": [
+        "Web-App",
+        "Full-Stack",
+        "3-Tier"
+      ],
+      "modelRef": "71cd6372-b8f3-46bd-853d-93ca136f0893"
     }
   ]
 }
