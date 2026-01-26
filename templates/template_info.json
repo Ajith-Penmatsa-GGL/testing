@@ -31,6 +31,17 @@
         "Electrical"
       ],
       "modelRef": "a273ada1-4fe1-4919-8732-4f75016b903d"
+    },
+    {
+      "id": "053677b4-6a5b-4e7c-834f-ee1debd7a7b8",
+      "name": "Online Battle Royale Games",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/online-battleroyale-game",
+      "tags": [
+        "Battle-Royale",
+        "Games",
+        "Multi-Player"
+      ],
+      "modelRef": "395a93e4-39ed-4cd4-a955-c0a06b6fdcb0"
     }
   ]
 }
