@@ -12,7 +12,7 @@
     },
     {
       "id": "cfcdb789-1acc-4869-92e5-9cb24ed261ac",
-      "name": "Three Tier Web Application",
+      "name": "Three Web Application",
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/IriusRisk/3-Tier-Web-App",
       "tags": [
         "Web-App",
