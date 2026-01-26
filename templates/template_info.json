@@ -9,6 +9,17 @@
         "Full-Stack"
       ],
       "modelRef": "6d61e4d8-3a4b-42ee-a1c7-75a75a20541d"
+    },
+    {
+      "id": "cfcdb789-1acc-4869-92e5-9cb24ed261ac",
+      "name": "Three Tier Web Application",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/IriusRisk/3-Tier-Web-App",
+      "tags": [
+        "Web-App",
+        "Full-Stack",
+        "3-Tier"
+      ],
+      "modelRef": "41d861fb-638d-40b2-ae3e-4da6fe8ecf3e"
     }
   ]
 }
