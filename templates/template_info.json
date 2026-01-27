@@ -49,6 +49,13 @@
         "Electrical"
       ],
       "modelRef": "255dfab7-5e03-4ac4-86ce-eee03e0604c2"
+    },
+    {
+      "id": "5154fd0a-1de0-4b6f-bafc-2baf287ea655",
+      "name": "New Blank Model",
+      "description": "",
+      "tags": [],
+      "modelRef": "a2481e9f-610d-43d9-aef6-5d0176dd3345"
     }
   ]
 }
