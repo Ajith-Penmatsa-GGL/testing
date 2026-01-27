@@ -1,0 +1,2472 @@
+{
+  "summary": {
+    "title": "Husky AI",
+    "owner": "",
+    "description": "A machine learning system to classify Huskies vs dogs. HuskyAI is a machine learning system designed to classify images and distinguish between huskies and non-huskies. It integrates secure data handling practices with a robust convolutional neural network (CNN) for image recognition. Secure Image Retrieval: HuskyAI uses TLS to securely fetch images from Azure Cognitive Services, ensuring encryption during data transmission and validating the server's authenticity to prevent man-in-the-middle attacks. Data Storage and Access Controls: Azure Blob Storage is used to store datasets, with public access fully blocked. Access is controlled using Role-Based Access Control (rbac) and Attribute-Based Access Control (ABAC) to enforce granular, identity-based permissions. Jupyter Notebooks, which host model development and experimentation, are also secured with rbac and ABAC, preventing unauthorized public access. Developer Authentication: Developers access the system through SSH keys protected by passphrases. This adds an additional layer of security, reducing the likelihood of unauthorized access even if keys are exposed. Model and Dataset Dataset Composition: The dataset comprises approximately 1,300 husky images and 3,000 non-husky images sourced via Bing's image search. Data undergoes manual cleansing and is split into training and validation sets to enhance model performance. Model Design: HuskyAI employs a CNN with: Convolutional layers for feature extraction. Max-pooling layers for dimensionality reduction. Dropout layers to prevent overfitting. Dense layers for final classification. The model is trained with the Adam optimizer and a learning rate of 0.0005, optimized for accuracy and computational efficiency. Security Considerations rbac and ABAC controls across storage and development environments ensure sensitive data and configurations are protected. TLS ensures secure communication channels, preventing eavesdropping or data interception during image retrieval. Applications HuskyAI is tailored for accurate image classification and can be adapted for other domains requiring precise visual differentiation, with a focus on maintaining strong security postures. HuskyAI combines state-of-the-art machine learning techniques with stringent security controls, including secure communications, robust access management, and encrypted developer authentication, to deliver a reliable and secure image classification system.",
+    "id": "",
+    "compatibility": {
+      "business_criticality": "low",
+      "data_sensitivity": [
+        "biz"
+      ],
+      "exposure": "external",
+      "tier": "non_critical"
+    }
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "version": "2.4.1",
+        "title": "Husky AI",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "diagramType": "TM-BOM",
+        "id": 0,
+        "cells": [
+          {
+            "size": {
+              "width": 150,
+              "height": 80
+            },
+            "label": "Engineer",
+            "shape": "actor",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Engineer",
+              "description": "A Data Engineer responsible for building, training, and deploying machine learning models.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "id": "4603eebf-2dfd-48b4-bf1d-f22fe700cf69",
+            "position": {
+              "x": 62.5,
+              "y": 62.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 80
+            },
+            "label": "Infra Admin",
+            "shape": "actor",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Infra Admin",
+              "description": "Administrator responsible for securing and maintaining production infrastructure.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "id": "279c884f-14d8-40e6-8e4d-d5d32c0def5d",
+            "position": {
+              "x": 62.5,
+              "y": 267.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 80
+            },
+            "label": "Azure\nCognitive Services",
+            "shape": "actor",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Azure\nCognitive Services",
+              "description": "External service providing resources for machine learning experimentation.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "id": "ec8cef2f-34fb-4f0b-b126-7045b9dbe5fc",
+            "position": {
+              "x": 347.5,
+              "y": 62.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 80
+            },
+            "label": "User",
+            "shape": "actor",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "User",
+              "description": "External user interacting with the HuskyAI system via the API Gateway.",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "id": "0a5464ef-6f8d-4613-af74-427712225d7e",
+            "position": {
+              "x": 62.5,
+              "y": 472.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 75
+            },
+            "attrs": {
+              "text": {
+                "text": "3rd party tools\nand ML libraries"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "store",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Store",
+              "name": "3rd party tools\nand ML libraries",
+              "description": "External third party tools for the services",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "id": "ec1a20d0-d4f2-4191-a7f8-4367074f7afc",
+            "position": {
+              "x": 632.5,
+              "y": 62.5
+            }
+          },
+          {
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Gather\nImages Application\n(Python)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "process",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Process",
+              "name": "Gather\nImages Application\n(Python)",
+              "description": "This is a Python-based application responsible for gathering images from external sources, specifically Azure Cognitive Services, and storing them in the designated Training and Validation Images storage. ",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "id": "75ad0fd3-4979-4986-9687-92d9b80a8307",
+            "position": {
+              "x": 472.5,
+              "y": 392.5
+            }
+          },
+          {
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Jupyter\nNotebook"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "process",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Jupyter\nNotebook",
+              "description": "A Jupyter Notebook environment that processes the images stored in Training and Validation Images, executes code using external ML libraries, and provides a UI for engineers to interact with and manipulate data, allowing for iterative model development. It can save trained machine learning models to Machine Learning Model storage.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "id": "30247464-0f4b-4b77-8709-fd971b415171",
+            "position": {
+              "x": 472.5,
+              "y": 597.5
+            }
+          },
+          {
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Deployment"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "process",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Deployment",
+              "description": "Handles the deployment of the machine learning model by packaging the model and all necessary source code and configuration stored in Source Code and Configuration. It receives the final model from Jupyter Notebook and prepares it for deployment to the production environment.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "id": "ac63e88d-94ed-426a-a0f0-b6e4ba28c667",
+            "position": {
+              "x": 757.5,
+              "y": 392.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 75
+            },
+            "attrs": {
+              "text": {
+                "text": "Training\nand Validation\nImages"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "store",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Store",
+              "name": "Training\nand Validation\nImages",
+              "description": "Contains images used for training and validation of machine learning models.\nData set: Training and Validation Images\nContains images used for training and validation of machine learning models.\n Record count maximum of 100000 with data sensitivity of biz and access control methods of rbac",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "id": "660071ef-33cf-4c00-9b15-10ba0f1b1518",
+            "position": {
+              "x": 472.5,
+              "y": 802.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 75
+            },
+            "attrs": {
+              "text": {
+                "text": "API Key"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "store",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Store",
+              "name": "API Key",
+              "description": "Stores API keys for secure access to external services.\nData set: API Keys\nStores API keys for secure access to external services.\n Record count maximum of 20 with data sensitivity of cred and access control methods of rbac",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "id": "d6f4f384-092d-4d71-8788-5b97f5ea662c",
+            "position": {
+              "x": 1042.5,
+              "y": 392.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 75
+            },
+            "attrs": {
+              "text": {
+                "text": "Machine\nLearning Model"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "store",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Store",
+              "name": "Machine\nLearning Model",
+              "description": "Contains the machine learning models in serialized format.\nData set: Bastion Logs\nContains trained machine learning models in serialized format for production use.\n Record count maximum of 5000 with data sensitivity of biz and access control methods of acl",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "id": "df800a00-3adf-41bf-ad32-c54be7f73a14",
+            "position": {
+              "x": 472.5,
+              "y": 1007.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 75
+            },
+            "attrs": {
+              "text": {
+                "text": "Source Code\nand Configuration"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "store",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Store",
+              "name": "Source Code\nand Configuration",
+              "description": "Stores source code and configuration files for deployment and production setup.\nData set: Source Code and Configuration\nStores source code and configuration files for deployment and production setup.\n Record count maximum of 200 with data sensitivity of biz and access control methods of rbac",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "id": "990fb803-6fe9-4e4a-a5fe-f75f2e890ff6",
+            "position": {
+              "x": 1327.5,
+              "y": 392.5
+            }
+          },
+          {
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Simple Python\nWeb Server"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "process",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Process",
+              "name": "Simple Python\nWeb Server",
+              "description": "Serves as simple web server",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "id": "bb02ba1a-d13a-4b65-989b-bef7644cd351",
+            "position": {
+              "x": 1737.5,
+              "y": 392.5
+            }
+          },
+          {
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "API Gateway"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "process",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "API Gateway",
+              "description": "Serves as the entry point for external users to interact with the production environment via HTTPS. It routes user requests to the Simple Python Web Server and ensures secure communication. The API Gateway enforces request validation and manages APIs exposed to the public while ensuring access control to internal services.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "id": "3e98ad6a-5b32-4fbf-8db8-22100ec1d8bf",
+            "position": {
+              "x": 1737.5,
+              "y": 597.5
+            }
+          },
+          {
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Bastion"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "process",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Bastion",
+              "description": "A secure access management component for administrative functions. It provides controlled SSH access for the Infrastructure Admin to internal production resources, such as the Stored Machine Learning Model and Simple Python Web Server.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "id": "5df5c928-9159-461b-91aa-acb81b6417cb",
+            "position": {
+              "x": 2022.5,
+              "y": 392.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 75
+            },
+            "attrs": {
+              "text": {
+                "text": "Authorized Keys"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "store",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Store",
+              "name": "Authorized Keys",
+              "description": "Contains SSH keys used for securing administrative access.\nData set: Authorized Keys\nContains SSH keys used for securing administrative access.\n Record count maximum of 100 with data sensitivity of cred and access control methods of rbac",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "id": "3a260842-700b-4fc6-807b-68f9d09da6b0",
+            "position": {
+              "x": 1737.5,
+              "y": 802.5
+            }
+          },
+          {
+            "size": {
+              "width": 150,
+              "height": 75
+            },
+            "attrs": {
+              "text": {
+                "text": "Stored Machine\nLearning Model"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "shape": "store",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Store",
+              "name": "Stored Machine\nLearning Model",
+              "description": "Contains storage for machine learning models in serialized format.\nData set: Stored Machine Learning Models\nContains trained machine learning models in serialized format for production use.\n Record count maximum of 10 with data sensitivity of biz and access control methods of rbac",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "id": "869a6c6b-6f99-4120-8c1b-02975e794585",
+            "position": {
+              "x": 2307.5,
+              "y": 392.5
+            }
+          },
+          {
+            "position": {
+              "x": 410,
+              "y": 330
+            },
+            "size": {
+              "width": 1140,
+              "height": 820
+            },
+            "attrs": {
+              "label": {
+                "text": "Experimental Trust Zone"
+              }
+            },
+            "shape": "trust-boundary-box",
+            "id": "ece65220-3188-45a3-8078-18303e031349",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Experimental Trust Zone",
+              "description": "Internal VPC with the experimental and development deployment for HuskyAI\nconfirmed assumption : All services within the trust boundary validate tokens via Auth Service\n",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1675,
+              "y": 330
+            },
+            "size": {
+              "width": 855,
+              "height": 615
+            },
+            "attrs": {
+              "label": {
+                "text": "Production Trust Zone"
+              }
+            },
+            "shape": "trust-boundary-box",
+            "id": "8550ec5a-71fd-4a64-9ea4-66d2603e3904",
+            "zIndex": -2,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Production Trust Zone",
+              "description": "Internal VPC with the production deployment of HuskyAI\nconfirmed assumption : All services within the trust boundary validate tokens via Auth Service\n",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "HTTPS",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS",
+              "description": "Transfer data from Azure Cognitive Services to Gather Images Application in Python.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "ec8cef2f-34fb-4f0b-b126-7045b9dbe5fc"
+            },
+            "target": {
+              "cell": "75ad0fd3-4979-4986-9687-92d9b80a8307"
+            },
+            "vertices": [],
+            "id": "6d283509-011e-4604-be22-58e75b35973a",
+            "zIndex": 0
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "imports",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "imports",
+              "description": "Transfer data from Third Party tools and ML libraries to Gather Images Application in Python.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "ec1a20d0-d4f2-4191-a7f8-4367074f7afc"
+            },
+            "target": {
+              "cell": "75ad0fd3-4979-4986-9687-92d9b80a8307"
+            },
+            "vertices": [],
+            "id": "1c4abf6b-cdea-4303-9e2c-17649d5761aa",
+            "zIndex": 1
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "imports",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "imports",
+              "description": "Transfer data from Third Party tools and ML libraries to Jupyter Notebook.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "ec1a20d0-d4f2-4191-a7f8-4367074f7afc"
+            },
+            "target": {
+              "cell": "30247464-0f4b-4b77-8709-fd971b415171"
+            },
+            "vertices": [],
+            "id": "d5282b46-97d9-48f0-8903-b6dfe828ca34",
+            "zIndex": 2
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "VS Code (SSH)",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "VS Code (SSH)",
+              "description": "Transfer data from Engineer to Gather Images Application in Python.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "4603eebf-2dfd-48b4-bf1d-f22fe700cf69"
+            },
+            "target": {
+              "cell": "75ad0fd3-4979-4986-9687-92d9b80a8307"
+            },
+            "vertices": [],
+            "id": "6e934169-1155-4ba5-9170-28ad589b8dbd",
+            "zIndex": 3
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "VS Code (SSH)",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "VS Code (SSH)",
+              "description": "Transfer code and ML models from Engineer locally to Jupyter Notebook.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "4603eebf-2dfd-48b4-bf1d-f22fe700cf69"
+            },
+            "target": {
+              "cell": "30247464-0f4b-4b77-8709-fd971b415171"
+            },
+            "vertices": [],
+            "id": "b49e9c86-fd69-456e-9c1f-b50c24ce149e",
+            "zIndex": 4
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "stores",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "stores",
+              "description": "Transfer images from Gather Images Application to Training and Validation Images.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "75ad0fd3-4979-4986-9687-92d9b80a8307"
+            },
+            "target": {
+              "cell": "660071ef-33cf-4c00-9b15-10ba0f1b1518"
+            },
+            "vertices": [],
+            "id": "3b2a5cc1-0d6f-4655-b4b2-0c468af4a6ed",
+            "zIndex": 5
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "loads",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "loads",
+              "description": "API Key Storage to Gather Images Application in Python.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "d6f4f384-092d-4d71-8788-5b97f5ea662c"
+            },
+            "target": {
+              "cell": "75ad0fd3-4979-4986-9687-92d9b80a8307"
+            },
+            "vertices": [],
+            "id": "4ca27732-6c56-46eb-8c9f-2f5b1cb50f34",
+            "zIndex": 6
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "processes",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "processes",
+              "description": "Load from Training and Validation Images to Jupyter Notebook.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "660071ef-33cf-4c00-9b15-10ba0f1b1518"
+            },
+            "target": {
+              "cell": "30247464-0f4b-4b77-8709-fd971b415171"
+            },
+            "vertices": [],
+            "id": "4c210b61-3a24-4991-8089-5f50bfb0a421",
+            "zIndex": 7
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "package",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "package",
+              "description": "Transfer data from Machine Learning Model to Deployment.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "df800a00-3adf-41bf-ad32-c54be7f73a14"
+            },
+            "target": {
+              "cell": "ac63e88d-94ed-426a-a0f0-b6e4ba28c667"
+            },
+            "vertices": [],
+            "id": "305b04bb-79b3-4cf9-8d63-11119eb87496",
+            "zIndex": 8
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "save.h5",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "save.h5",
+              "description": "Transfer final model from Jupyter Notebook to Machine Learning Model.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "30247464-0f4b-4b77-8709-fd971b415171"
+            },
+            "target": {
+              "cell": "df800a00-3adf-41bf-ad32-c54be7f73a14"
+            },
+            "vertices": [],
+            "id": "f3829f59-fa1a-4a85-9386-b5c2571237ff",
+            "zIndex": 9
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "package",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "package",
+              "description": "Transfer from Machine Learning Model Blob to Deployment Service.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "869a6c6b-6f99-4120-8c1b-02975e794585"
+            },
+            "target": {
+              "cell": "ac63e88d-94ed-426a-a0f0-b6e4ba28c667"
+            },
+            "vertices": [],
+            "id": "ba15e1a3-f658-4113-b992-795f4dbb40bb",
+            "zIndex": 10
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "package",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "package",
+              "description": "Transfer data from Source Code and Configuration to Deployment.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "990fb803-6fe9-4e4a-a5fe-f75f2e890ff6"
+            },
+            "target": {
+              "cell": "ac63e88d-94ed-426a-a0f0-b6e4ba28c667"
+            },
+            "vertices": [],
+            "id": "ce069ccf-9d4b-430f-ba5c-dc42247bc72b",
+            "zIndex": 11
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "HTTPS",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS",
+              "description": "Transfer from User to API Gateway.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "0a5464ef-6f8d-4613-af74-427712225d7e"
+            },
+            "target": {
+              "cell": "3e98ad6a-5b32-4fbf-8db8-22100ec1d8bf"
+            },
+            "vertices": [],
+            "id": "c8a5ba9e-b3ef-47b8-9409-8104fc972cfc",
+            "zIndex": 12
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "update",
+              "description": "Transfer data from Bastion to API Gateway.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "5df5c928-9159-461b-91aa-acb81b6417cb"
+            },
+            "target": {
+              "cell": "3e98ad6a-5b32-4fbf-8db8-22100ec1d8bf"
+            },
+            "vertices": [],
+            "id": "36edfeec-d6b2-4a24-9578-ea44bf481aa4",
+            "zIndex": 13
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "HTTPS",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS",
+              "description": "Transfer data from API Gateway to Simple Python Web Server.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "3e98ad6a-5b32-4fbf-8db8-22100ec1d8bf"
+            },
+            "target": {
+              "cell": "bb02ba1a-d13a-4b65-989b-bef7644cd351"
+            },
+            "vertices": [],
+            "id": "1c8e5c14-fa66-49b2-b889-c08e1e1644b1",
+            "zIndex": 14
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "update",
+              "description": "Transfer data from Bastion to Simple Python Web Server.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "5df5c928-9159-461b-91aa-acb81b6417cb"
+            },
+            "target": {
+              "cell": "bb02ba1a-d13a-4b65-989b-bef7644cd351"
+            },
+            "vertices": [],
+            "id": "2ba0b1ba-a8b1-4968-9307-4ffe3f383721",
+            "zIndex": 15
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "loads",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "loads",
+              "description": "Transfer sensitive data from Stored Machine Learning Model to Simple Python Web Server.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "869a6c6b-6f99-4120-8c1b-02975e794585"
+            },
+            "target": {
+              "cell": "bb02ba1a-d13a-4b65-989b-bef7644cd351"
+            },
+            "vertices": [],
+            "id": "d580a87e-c920-49ef-a45c-e7bc1297b589",
+            "zIndex": 16
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "SSH",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "SSH",
+              "description": "Transfer sensitive data from Deployment Service to Bastion",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "ac63e88d-94ed-426a-a0f0-b6e4ba28c667"
+            },
+            "target": {
+              "cell": "5df5c928-9159-461b-91aa-acb81b6417cb"
+            },
+            "vertices": [],
+            "id": "48dd0b8b-767a-4d01-8167-630f4cdfd5f0",
+            "zIndex": 17
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "update",
+              "description": "Transfer sensitive data from Bastion to Stored Machine Learning Model.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "5df5c928-9159-461b-91aa-acb81b6417cb"
+            },
+            "target": {
+              "cell": "869a6c6b-6f99-4120-8c1b-02975e794585"
+            },
+            "vertices": [],
+            "id": "918b1234-a98d-4924-863d-f9e4eafd983d",
+            "zIndex": 18
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "SSH",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "SSH",
+              "description": "Transfer data from Infrastructure Admin to Bastion.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "279c884f-14d8-40e6-8e4d-d5d32c0def5d"
+            },
+            "target": {
+              "cell": "5df5c928-9159-461b-91aa-acb81b6417cb"
+            },
+            "vertices": [],
+            "id": "6c7666e1-4f8a-4cb7-bfa7-b5df396f9b4b",
+            "zIndex": 19
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "update",
+              "description": "Transfer sensitive data from Bastion to Stored Machine Learning Model.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "5df5c928-9159-461b-91aa-acb81b6417cb"
+            },
+            "target": {
+              "cell": "869a6c6b-6f99-4120-8c1b-02975e794585"
+            },
+            "vertices": [],
+            "id": "0bf8001f-6534-447f-a787-cf542215c6c7",
+            "zIndex": 20
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "Transfer sensitive data from Authorized Keys Storage to Bastion.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "3a260842-700b-4fc6-807b-68f9d09da6b0"
+            },
+            "target": {
+              "cell": "5df5c928-9159-461b-91aa-acb81b6417cb"
+            },
+            "vertices": [],
+            "id": "fadea937-e487-475d-8f37-a175cb350b2d",
+            "zIndex": 21
+          },
+          {
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "imports",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "imports",
+              "description": "Transfer data from Third Party tools and ML libraries to Simple Python Web Server.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "source": {
+              "cell": "ec1a20d0-d4f2-4191-a7f8-4367074f7afc"
+            },
+            "target": {
+              "cell": "bb02ba1a-d13a-4b65-989b-bef7644cd351"
+            },
+            "vertices": [],
+            "id": "055a10a4-13cf-4889-ba6a-91af924c1dbe",
+            "zIndex": 22
+          }
+        ]
+      }
+    ],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 8
+  },
+  "version": "2.5.0",
+  "compatibility": {
+    "version": "1.0.1",
+    "description": "A machine learning system to classify Huskies vs dogs",
+    "frozen": false,
+    "release_docs_link": "https://github.com/wunderwuzzi23/huskyai",
+    "reviewed_at": "2025-05-28",
+    "repo_link": "https://github.com/wunderwuzzi23/huskyai"
+  }
+}
