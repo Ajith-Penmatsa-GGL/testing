@@ -10,6 +10,13 @@
         "Mobile-apps"
       ],
       "modelRef": "0117d0d8-1a69-4b2e-a278-059657b2c4fc"
+    },
+    {
+      "id": "c21377ab-6cc4-4bc4-821b-dff90b393fb5",
+      "name": "Demo Threat Model",
+      "description": "A sample model of a web application, with a queue-decoupled background process.",
+      "tags": [],
+      "modelRef": "656396a7-f1f6-4d70-bc12-efc75f5e1415"
     }
   ]
 }
