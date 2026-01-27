@@ -17,6 +17,16 @@
       "description": "A sample model of a web application, with a queue-decoupled background process.",
       "tags": [],
       "modelRef": "656396a7-f1f6-4d70-bc12-efc75f5e1415"
+    },
+    {
+      "id": "6f641c8b-f928-424f-a860-0be752bbbb8e",
+      "name": "Generic Content Management System (CMS)",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/generic-cms",
+      "tags": [
+        "CMS",
+        "Full-Stack"
+      ],
+      "modelRef": "c6df0452-fee7-4bd3-9697-ec9da30419c8"
     }
   ]
 }
