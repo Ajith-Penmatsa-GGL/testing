@@ -78,6 +78,16 @@
         "Api"
       ],
       "modelRef": "97603eb9-3fda-4b87-a149-17f66144a1c3"
+    },
+    {
+      "id": "631e4204-9fdb-4ce9-b710-bd4b3b8b9ae6",
+      "name": "Renting Car Startup",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/renting-car-startup",
+      "tags": [
+        "Saas",
+        "bussiness"
+      ],
+      "modelRef": "c505d276-7b63-4823-870b-c3f3e57284cf"
     }
   ]
 }
