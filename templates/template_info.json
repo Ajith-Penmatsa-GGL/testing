@@ -67,6 +67,17 @@
         "Multi-Player"
       ],
       "modelRef": "d37c3207-5dae-42ad-bd5f-35cb1580bd6e"
+    },
+    {
+      "id": "90a042bf-d18d-4444-b746-c4e078ff632f",
+      "name": "Online Payments Processing Platform",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/payment",
+      "tags": [
+        "Payment",
+        "Banks",
+        "Api"
+      ],
+      "modelRef": "97603eb9-3fda-4b87-a149-17f66144a1c3"
     }
   ]
 }
