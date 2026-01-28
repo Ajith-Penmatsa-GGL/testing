@@ -37,6 +37,17 @@
         "Ai"
       ],
       "modelRef": "de5f1468-0289-49f0-bdbd-420648f65faf"
+    },
+    {
+      "id": "fb09cde0-605e-43d8-bcd5-d6aca067ec61",
+      "name": "Internet of Things (IoT) Device",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/iot-device",
+      "tags": [
+        "IOT",
+        "Embedded",
+        "Electrical"
+      ],
+      "modelRef": "02647b18-373a-42f7-a2b2-8f9d74f55a0e"
     }
   ]
 }
