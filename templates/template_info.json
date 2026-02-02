@@ -1,16 +1,6 @@
 {
   "templates": [
     {
-      "id": "14fdfb68-7bb7-47cd-91e9-4f8a3e0c7943",
-      "name": "Generic Content Management System (CMS)",
-      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/generic-cms",
-      "tags": [
-        "CMS",
-        "Full-Stack"
-      ],
-      "modelRef": "8e15f247-e281-44ee-b60c-46086066e5fb"
-    },
-    {
       "id": "8e9b8c94-087d-40a4-a5f7-fbd2317915d0",
       "name": "model i am making",
       "description": "this is for testing purposes",
