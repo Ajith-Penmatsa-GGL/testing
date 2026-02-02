@@ -24,6 +24,13 @@
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/generic-cms",
       "tags": [],
       "modelRef": "70a859d3-20ce-4145-a51c-7a61cf5c39d3"
+    },
+    {
+      "id": "d557d37a-65fa-4fe4-9318-51790a0542b0",
+      "name": "Cryptocurrency Wallet template",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
+      "tags": [],
+      "modelRef": "158903b2-98d1-4e22-adb8-991f0a12f76f"
     }
   ]
 }
