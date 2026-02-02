@@ -20,6 +20,13 @@
         "Full-Stack"
       ],
       "modelRef": "8e15f247-e281-44ee-b60c-46086066e5fb"
+    },
+    {
+      "id": "297efcac-dc7e-4690-bc5e-e168beb8e938",
+      "name": "Generic Content Management System (CMS) testing",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/generic-cms",
+      "tags": [],
+      "modelRef": "35547a58-7314-4c1f-9f03-c39f6dfd647a"
     }
   ]
 }
