@@ -1,17 +1,6 @@
 {
   "templates": [
     {
-      "id": "a50e2ac2-e555-4ea8-afa5-b5b8eeeebc33",
-      "name": "Cryptocurrency Wallet",
-      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
-      "tags": [
-        "Crypro",
-        "Finance",
-        "Mobile-apps"
-      ],
-      "modelRef": "c459f79b-01ce-4b4c-955b-25d707adc633"
-    },
-    {
       "id": "14fdfb68-7bb7-47cd-91e9-4f8a3e0c7943",
       "name": "Generic Content Management System (CMS)",
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/generic-cms",
