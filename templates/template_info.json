@@ -20,6 +20,13 @@
         "Full-Stack"
       ],
       "modelRef": "8e15f247-e281-44ee-b60c-46086066e5fb"
+    },
+    {
+      "id": "8e9b8c94-087d-40a4-a5f7-fbd2317915d0",
+      "name": "model i am making",
+      "description": "this is for testing purposes",
+      "tags": [],
+      "modelRef": "212cffc5-5100-463e-8b80-a3eab9e17a4b"
     }
   ]
 }
