@@ -1,3 +1,15 @@
 {
-  "templates": []
+  "templates": [
+    {
+      "id": "1c6226a6-8d47-490f-8276-228960a3c829",
+      "name": "Cryptocurrency Wallet",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
+      "tags": [
+        "Crypro",
+        "Finance",
+        "Mobile-apps"
+      ],
+      "modelRef": "08baf39d-f05c-4084-a1bb-334aa69feadf"
+    }
+  ]
 }
