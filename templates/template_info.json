@@ -6,8 +6,7 @@
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
       "tags": [
         "Crypro",
-        "Finance",
-        "Mobile-apps"
+        "Finance"
       ],
       "modelRef": "cc9fd04a-ec8d-42f3-a05f-015b1bd420e0"
     },
