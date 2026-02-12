@@ -20,6 +20,17 @@
         "Full-Stack"
       ],
       "modelRef": "a16a8e54-ea13-494d-9f4f-b91c52c01715"
+    },
+    {
+      "id": "a9b2930b-5cfc-40c5-b624-789fca084fb9",
+      "name": "Internet of Things (IoT) Device",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/iot-device",
+      "tags": [
+        "IOT",
+        "Embedded",
+        "Electrical"
+      ],
+      "modelRef": "b928f1cc-ce21-4fe1-8891-b53e01352ae5"
     }
   ]
 }
