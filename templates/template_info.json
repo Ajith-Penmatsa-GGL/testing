@@ -10,6 +10,16 @@
         "Mobile-apps"
       ],
       "modelRef": "cc9fd04a-ec8d-42f3-a05f-015b1bd420e0"
+    },
+    {
+      "id": "ef64d1ce-2a39-4df1-831d-d0c418e04390",
+      "name": "Generic Content Management System (CMS)",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/generic-cms",
+      "tags": [
+        "CMS",
+        "Full-Stack"
+      ],
+      "modelRef": "a16a8e54-ea13-494d-9f4f-b91c52c01715"
     }
   ]
 }
