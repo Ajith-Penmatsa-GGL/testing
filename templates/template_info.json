@@ -6,6 +6,13 @@
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
       "tags": [],
       "modelRef": "cef3f0ac-796e-4f41-998b-0d36a8caa614"
+    },
+    {
+      "id": "29b9468b-f2a1-4d09-9b01-7b3de3144f59",
+      "name": "Demo Threat Model",
+      "description": "A sample model of a web application, with a queue-decoupled background process.",
+      "tags": [],
+      "modelRef": "9a11bb22-33d0-4af0-8efc-8f23a40f1f3f"
     }
   ]
 }
