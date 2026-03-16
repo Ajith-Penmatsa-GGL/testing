@@ -1,0 +1,33 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "Three-Tier web app",
+    "owner": "Ajith",
+    "description": "A single page web app with a backend in aws enviornment.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "ajith"
+      },
+      {
+        "name": "chris"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Chris",
+    "threatTop": 0
+  }
+}
