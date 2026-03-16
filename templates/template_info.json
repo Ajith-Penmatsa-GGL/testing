@@ -1,3 +1,13 @@
 {
-  "templates": []
+  "templates": [
+    {
+      "id": "19a84d81-1245-4228-ab5d-a3663c75e167",
+      "name": "Three-Tier web app",
+      "description": "A single page web app with a backend in aws enviornment.",
+      "tags": [
+        "web app"
+      ],
+      "modelRef": "5f974fab-7e91-4229-b88a-45828208f1cf"
+    }
+  ]
 }
