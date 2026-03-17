@@ -8,6 +8,17 @@
         "web app"
       ],
       "modelRef": "5f974fab-7e91-4229-b88a-45828208f1cf"
+    },
+    {
+      "id": "6e06966b-88e6-4956-8226-246ada34003b",
+      "name": "Cryptocurrency Wallet",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
+      "tags": [
+        "Crypro",
+        "Finance",
+        "Mobile-apps"
+      ],
+      "modelRef": "58529bf5-dc80-439b-a416-a499a16a2ba8"
     }
   ]
 }
