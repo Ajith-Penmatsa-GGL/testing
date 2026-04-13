@@ -1,3 +1,17 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "6761407d-39d3-424f-9de4-7e988b2930ee",
+      "title": "SQL Injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "description": "Something Random",
+      "mitigation": "Use parameterised queries",
+      "tags": [
+        "web",
+        "injection"
+      ],
+      "score": "4"
+    }
+  ]
 }
