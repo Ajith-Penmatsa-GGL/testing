@@ -12,6 +12,19 @@
         "injection"
       ],
       "score": "4"
+    },
+    {
+      "id": "0dcb96e7-c57a-4b7a-845e-479eaeb71b66",
+      "title": "Cross-Site Scripting (XSS)",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "description": "An attacker injects malicious scripts into web pages viewed by other users, potentially stealing session tokens or performing actions on their behalf.",
+      "mitigation": "Sanitise and encode all user-supplied output. Use a Content Security Policy header.",
+      "tags": [
+        "web",
+        "xss"
+      ],
+      "score": ""
     }
   ]
 }
