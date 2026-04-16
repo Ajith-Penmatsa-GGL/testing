@@ -1,5 +1,16 @@
 {
   "catalogue": [
-    
+    {
+      "id": "6761407d-39d3-424f-9de4-7e988b2930ee",
+      "threatRef": "6761407d-39d3-424f-9de4-7e988b2930ee",
+      "title": "SQL Injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "tags": [
+        "web"
+      ],
+      "score": "",
+      "briefDescription": "Full description..."
+    }
   ]
 }
