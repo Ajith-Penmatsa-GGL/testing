@@ -11,6 +11,20 @@
       ],
       "score": "",
       "briefDescription": "Full description..."
+    },
+    {
+      "id": "b1cadd3b-fab5-41da-b00b-4e4ee9b523df",
+      "threatRef": "b1cadd3b-fab5-41da-b00b-4e4ee9b523df",
+      "title": "Cross-Site Request Forgery (CSRF)",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "tags": [
+        "web",
+        "csrf",
+        "authentication"
+      ],
+      "score": "",
+      "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application. Because the browser automatically inclu..."
     }
   ]
 }
