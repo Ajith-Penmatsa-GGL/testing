@@ -25,6 +25,19 @@
       ],
       "score": "",
       "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application. Because the browser automatically inclu..."
+    },
+    {
+      "id": "7cb2fa34-ec7f-45d5-ab16-3d12f8308b04",
+      "title": "Tampering",
+      "modelType": "PLOT4ai",
+      "type": "Safety",
+      "score": "20000",
+      "tags": [
+        "Ai",
+        "Future",
+        "Problem"
+      ],
+      "briefDescription": "this is a something that i am testing, just wrting a long descript could be ai prompt engineering inorder ot get access into a building"
     }
   ]
 }
