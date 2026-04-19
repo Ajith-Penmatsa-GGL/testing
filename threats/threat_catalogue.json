@@ -1,43 +1,4 @@
 {
   "catalogue": [
-    {
-      "id": "6761407d-39d3-424f-9de4-7e988b2930ee",
-      "threatRef": "6761407d-39d3-424f-9de4-7e988b2930ee",
-      "title": "SQL Injection",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "tags": [
-        "web"
-      ],
-      "score": "",
-      "briefDescription": "Full description..."
-    },
-    {
-      "id": "b1cadd3b-fab5-41da-b00b-4e4ee9b523df",
-      "threatRef": "b1cadd3b-fab5-41da-b00b-4e4ee9b523df",
-      "title": "Cross-Site Request Forgery (CSRF)",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "tags": [
-        "web",
-        "csrf",
-        "authentication"
-      ],
-      "score": "",
-      "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application. Because the browser automatically inclu..."
-    },
-    {
-      "id": "7cb2fa34-ec7f-45d5-ab16-3d12f8308b04",
-      "title": "Tampering",
-      "modelType": "PLOT4ai",
-      "type": "Safety",
-      "score": "20000",
-      "tags": [
-        "Ai",
-        "Future",
-        "Problem"
-      ],
-      "briefDescription": "this is a something that i am testing, just wrting a long descript could be ai prompt engineering inorder ot get access into a building"
-    }
   ]
 }
