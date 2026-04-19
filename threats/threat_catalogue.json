@@ -1,16 +1,5 @@
 {
   "catalogue": [
-    {
-      "title": "Cross-Site Request Forgery (CSRF)",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "tags": [
-        "web",
-        "csrf",
-        "authentication"
-      ],
-      "score": "",
-      "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application. Because the browser automatically inclu..."
-    }
+   
   ]
 }
