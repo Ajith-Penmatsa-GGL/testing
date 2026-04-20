@@ -12,7 +12,7 @@
         "authentication"
       ],
       "score": "",
-      "briefDescription": "jjjjj"
+      "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application. Because the browser automatically inclu..."
     }
   ]
 }
