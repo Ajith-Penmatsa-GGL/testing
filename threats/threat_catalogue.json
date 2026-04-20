@@ -13,6 +13,19 @@
       ],
       "score": "",
       "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application. Because the browser automatically inclu..."
+    },
+    {
+      "id": "b8d93f4c-9f98-47bd-9ae1-d02755082232",
+      "threatRef": "fac7ae0b-39dd-4cdc-b695-4bde92cd7212",
+      "title": "SQL Injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "web",
+        "injection"
+      ],
+      "briefDescription": "An attacker exploits insufficient input validation by injecting malicious SQL statements into input fields, URL parameters, or HTTP headers that are l..."
     }
   ]
 }
