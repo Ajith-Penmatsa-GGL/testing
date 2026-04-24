@@ -1,0 +1,12 @@
+{
+  "title": "Privilege Escalation",
+  "modelType": "STRIDE",
+  "type": "Elevation of Privilege",
+  "score": "9",
+  "tags": [
+    "access-control",
+    "authorization"
+  ],
+  "description": "An attacker gains elevated access to resources that are normally protected from them.",
+  "mitigation": "Apply principle of least privilege. Regularly audit role assignments and access controls."
+}
