@@ -54,6 +54,32 @@
         "identity"
       ],
       "briefDescription": "Weak or improperly implemented authentication mechanisms allow attackers to compromise passwords, keys, or session tokens to assume other users identi..."
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "threatRef": "00000000-0000-0000-0000-000000000002",
+      "title": "Man-in-the-Middle Attack",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "network",
+        "interception"
+      ],
+      "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000003",
+      "threatRef": "00000000-0000-0000-0000-000000000004",
+      "title": "Privilege Escalation",
+      "modelType": "STRIDE",
+      "type": "Elevation of Privilege",
+      "score": "9",
+      "tags": [
+        "access-control",
+        "authorization"
+      ],
+      "briefDescription": "An attacker gains elevated access to resources that are normally protected from them."
     }
   ]
 }
