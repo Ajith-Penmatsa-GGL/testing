@@ -27,6 +27,20 @@
         "database"
       ],
       "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth..."
+    },
+    {
+      "id": "169753c7-b4ab-4d6e-8795-9801c81cfa05",
+      "threatRef": "a378bd66-7d96-4661-ab0b-26be340cdab4",
+      "title": "Cross-Site Scripting (XSS",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "7",
+      "tags": [
+        "web",
+        "injection",
+        "client-side"
+      ],
+      "briefDescription": "An attacker injects malicious scripts into web pages viewed by other users, allowing session hijacking, credential theft, or redirection to malicious ..."
     }
   ]
 }
