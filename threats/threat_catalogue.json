@@ -1,3 +1,58 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "46191802-9622-4ebc-b76c-e8133a2c77b8",
+      "threatRef": "646a875a-2263-4e9a-b863-204ac84f6114",
+      "title": "SQL Injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "injection",
+        "web",
+        "database"
+      ],
+      "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth..."
+    },
+    {
+      "id": "fefa7435-2e3c-4c9e-b553-e921f3b665dc",
+      "threatRef": "d9e211ce-19a7-43b7-9fa2-4dc1a7733e42",
+      "title": "Broken Authentication",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "score": "9",
+      "tags": [
+        "authentication",
+        "identity"
+      ],
+      "briefDescription": "Weak or improperly implemented authentication mechanisms allow attackers to compromise passwords, keys, or session tokens to assume other users identi..."
+    },
+    {
+      "id": "f304bcf5-f0f2-469b-82fb-9df9b12ecbd4",
+      "threatRef": "ca12af33-7db0-4930-8c2c-c3f688723ba9",
+      "title": "Cross-Site Scripting (XSS",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "7",
+      "tags": [
+        "web",
+        "injection",
+        "client-side"
+      ],
+      "briefDescription": "An attacker injects malicious scripts into web pages viewed by other users, allowing session hijacking, credential theft, or redirection to malicious ..."
+    },
+    {
+      "id": "1aedb81a-f25b-416a-87c5-3b4de6f59a27",
+      "threatRef": "5184f50d-f2f5-408d-adb1-3305eea4f31e",
+      "title": "Man-in-the-Middle Attack",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "network",
+        "interception"
+      ],
+      "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
+    }
+  ]
 }
