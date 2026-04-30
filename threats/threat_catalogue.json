@@ -1,3 +1,31 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "b84f69a2-7518-4898-b5ac-9f15269a2d6e",
+      "threatRef": "d959558a-828f-4863-970e-8d8d8ac409e1",
+      "title": "SQL Injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "injection",
+        "web",
+        "database"
+      ],
+      "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth..."
+    },
+    {
+      "id": "ea5ea5c5-6e60-468f-82ee-e43615232071",
+      "threatRef": "c4cd2352-150f-4912-833c-a82540e39190",
+      "title": "Man-in-the-Middle Attack",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "network",
+        "interception"
+      ],
+      "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
+    }
+  ]
 }
