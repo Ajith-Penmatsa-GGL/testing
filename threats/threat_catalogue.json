@@ -1,20 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "ba3cab9b-7884-4014-8ad7-e93fe03458d1",
-      "threatRef": "7d99ccac-6979-484c-9bb2-a5da91db00bf",
-      "title": "SQL Injection",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "score": "8",
-      "tags": [
-        "injection",
-        "web",
-        "database"
-      ],
-      "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth..."
-    },
-    {
       "id": "24f9800c-c029-466b-9dc9-a63887c4476c",
       "threatRef": "840106c0-1251-4d22-85a8-48f4fd75bec7",
       "title": "Broken Authentication",
