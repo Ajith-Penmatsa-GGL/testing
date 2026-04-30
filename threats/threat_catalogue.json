@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "5f0b80ab-09ce-4938-baa7-118fb2ea462b",
-      "threatRef": "222c887f-0080-4201-be1b-61e1960218f5",
-      "title": "Man-in-the-Middle Attack",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "score": "8",
-      "tags": [
-        "network",
-        "interception"
-      ],
-      "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
-    },
-    {
       "id": "48ff4476-6809-4b33-a516-7ea4935774f0",
       "threatRef": "135b30a1-f1ac-4afc-81ba-131d974186a6",
       "title": "SQL Injection",
