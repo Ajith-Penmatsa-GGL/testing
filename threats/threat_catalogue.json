@@ -1,17 +1,3 @@
 {
-  "catalogue": [
-    {
-      "id": "d205266a-0a89-4c09-90c3-e6a5c856e440",
-      "threatRef": "b17b19aa-9267-465a-bd1e-013c548c0c86",
-      "title": "Man-in-the-Middle Attack",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "score": "8",
-      "tags": [
-        "network",
-        "interception"
-      ],
-      "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
-    }
-  ]
+  "catalogue": []
 }
