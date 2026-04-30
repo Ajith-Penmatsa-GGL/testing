@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "99e4e3f6-6119-4702-9d59-8475e2431e93",
-      "threatRef": "85435eb6-62ae-4ec7-9134-7bf9fccc69e3",
-      "title": "Broken Authentication",
-      "modelType": "STRIDE",
-      "type": "Spoofing",
-      "score": "9",
-      "tags": [
-        "authentication",
-        "identity"
-      ],
-      "briefDescription": "Weak or improperly implemented authentication mechanisms allow attackers to compromise passwords, keys, or session tokens to assume other users identi..."
-    },
-    {
       "id": "1487b3b0-7697-4fea-876e-5c089cfe040e",
       "threatRef": "82110e71-58cd-422a-8466-e2b5fedbec67",
       "title": "Cross-Site Scripting (XSS",
