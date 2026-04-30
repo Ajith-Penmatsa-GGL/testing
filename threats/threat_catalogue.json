@@ -12,6 +12,47 @@
         "interception"
       ],
       "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
+    },
+    {
+      "id": "48ff4476-6809-4b33-a516-7ea4935774f0",
+      "threatRef": "135b30a1-f1ac-4afc-81ba-131d974186a6",
+      "title": "SQL Injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "injection",
+        "web",
+        "database"
+      ],
+      "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth..."
+    },
+    {
+      "id": "99e4e3f6-6119-4702-9d59-8475e2431e93",
+      "threatRef": "85435eb6-62ae-4ec7-9134-7bf9fccc69e3",
+      "title": "Broken Authentication",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "score": "9",
+      "tags": [
+        "authentication",
+        "identity"
+      ],
+      "briefDescription": "Weak or improperly implemented authentication mechanisms allow attackers to compromise passwords, keys, or session tokens to assume other users identi..."
+    },
+    {
+      "id": "1487b3b0-7697-4fea-876e-5c089cfe040e",
+      "threatRef": "82110e71-58cd-422a-8466-e2b5fedbec67",
+      "title": "Cross-Site Scripting (XSS",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "7",
+      "tags": [
+        "web",
+        "injection",
+        "client-side"
+      ],
+      "briefDescription": "An attacker injects malicious scripts into web pages viewed by other users, allowing session hijacking, credential theft, or redirection to malicious ..."
     }
   ]
 }
