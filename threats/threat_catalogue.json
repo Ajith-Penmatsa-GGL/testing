@@ -26,6 +26,33 @@
         "client-side"
       ],
       "briefDescription": "An attacker injects malicious scripts into web pages viewed by other users, allowing session hijacking, credential theft, or redirection to malicious ..."
+    },
+    {
+      "id": "0e54f1d0-f99a-43d9-ba81-8d113d333f49",
+      "threatRef": "8ec3309c-cc7a-4f51-a135-c04e9557d83f",
+      "title": "Man-in-the-Middle Attack",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "network",
+        "interception"
+      ],
+      "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
+    },
+    {
+      "id": "1f823ebf-6e90-4155-b1f1-3618b47b6d3c",
+      "threatRef": "b368f29b-a06b-4f1b-aeba-19a1a10c231a",
+      "title": "SQL Injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "injection",
+        "web",
+        "database"
+      ],
+      "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth..."
     }
   ]
 }
