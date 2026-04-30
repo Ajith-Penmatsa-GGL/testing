@@ -1,20 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "b5780e1b-8454-42ef-a9ff-3612bbddc836",
-      "threatRef": "ae043b9d-e869-4368-841b-7ed16132c5d0",
-      "title": "Cross-Site Scripting (XSS",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "score": "7",
-      "tags": [
-        "web",
-        "injection",
-        "client-side"
-      ],
-      "briefDescription": "An attacker injects malicious scripts into web pages viewed by other users, allowing session hijacking, credential theft, or redirection to malicious ..."
-    },
-    {
       "id": "d205266a-0a89-4c09-90c3-e6a5c856e440",
       "threatRef": "b17b19aa-9267-465a-bd1e-013c548c0c86",
       "title": "Man-in-the-Middle Attack",
