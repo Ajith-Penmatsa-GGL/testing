@@ -1,0 +1,12 @@
+{
+  "title": "Broken Authentication",
+  "modelType": "STRIDE",
+  "type": "Spoofing",
+  "score": "9",
+  "tags": [
+    "authentication",
+    "identity"
+  ],
+  "description": "Weak or improperly implemented authentication mechanisms allow attackers to compromise passwords, keys, or session tokens to assume other users identities.",
+  "mitigation": "Enforce MFA, use secure session management, implement account lockout policies and strong password requirements."
+}
