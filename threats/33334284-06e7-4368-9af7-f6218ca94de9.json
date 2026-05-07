@@ -1,0 +1,12 @@
+{
+  "title": "Sensitive Data Exposure via API Response",
+  "modelType": "STRIDE",
+  "type": "Information disclosure",
+  "score": "7",
+  "tags": [
+    "api",
+    "data-leakage"
+  ],
+  "description": "An API returns more data than the client needs, including sensitive fields such as passwords, tokens, or PII, which can be harvested by an attacker intercepting responses.",
+  "mitigation": "Implement response filtering and use DTOs to return only required fields. Audit API responses regularly."
+}
