@@ -26,6 +26,111 @@
         "interception"
       ],
       "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
+    },
+    {
+      "id": "cf6c0493-3ce9-490a-9b4a-abb4fee88ac9",
+      "threatRef": "b3b75886-861f-41df-8649-2fc73004fa27",
+      "title": "Credential Stuffing",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "score": "7",
+      "tags": [
+        "authentication",
+        "brute-force"
+      ],
+      "briefDescription": "An attacker uses large sets of leaked username and password pairs to gain unauthorised access by automating login attempts across multiple services."
+    },
+    {
+      "id": "14407b45-15cf-4e38-a6c1-e40d7a14823b",
+      "threatRef": "254f9fcf-6367-4df7-a8d9-e6315888512f",
+      "title": "Privilege Escalation",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "score": "9",
+      "tags": [
+        "access-control",
+        "authorisation"
+      ],
+      "briefDescription": "An attacker gains elevated access to resources that are normally protected from an application or user, exploiting bugs or misconfigurations in author..."
+    },
+    {
+      "id": "a84f4312-786c-425c-9e53-d3b18a01da75",
+      "threatRef": "dbdc6d5d-70cb-4f7e-8c97-10e71119d206",
+      "title": "Log Tampering",
+      "modelType": "STRIDE",
+      "type": "Repudiation",
+      "score": "6",
+      "tags": [
+        "logging",
+        "audit"
+      ],
+      "briefDescription": "An attacker modifies or deletes audit logs to hide malicious activity or deny having performed certain actions, undermining accountability."
+    },
+    {
+      "id": "3d16a2f0-1899-4f06-adc7-cc11c86ed269",
+      "threatRef": "33334284-06e7-4368-9af7-f6218ca94de9",
+      "title": "Sensitive Data Exposure via API Response",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "score": "7",
+      "tags": [
+        "api",
+        "data-leakage"
+      ],
+      "briefDescription": "An API returns more data than the client needs, including sensitive fields such as passwords, tokens, or PII, which can be harvested by an attacker in..."
+    },
+    {
+      "id": "341643d6-fb2a-486e-a426-0670a240b483",
+      "threatRef": "8407d092-cd66-483e-ac7c-93d2d69c7634",
+      "title": "Denial of Service via Resource Exhaustion",
+      "modelType": "STRIDE",
+      "type": "Denial of service",
+      "score": "7",
+      "tags": [
+        "availability",
+        "dos"
+      ],
+      "briefDescription": "An attacker sends a high volume of requests or crafts expensive operations to exhaust server resources such as CPU, memory, or database connections, m..."
+    },
+    {
+      "id": "6ec55941-489a-4449-81ef-873ac473e5fe",
+      "threatRef": "613132df-c403-4c5d-9e15-af3386d970cc",
+      "title": "Broken Object Level Authorisation",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "score": "9",
+      "tags": [
+        "api",
+        "idor",
+        "authorisation"
+      ],
+      "briefDescription": "An attacker manipulates object identifiers in API requests to access records belonging to other users, bypassing authorisation checks that are missing..."
+    },
+    {
+      "id": "dd16b7dd-32a9-412c-8c54-9a76fb6f2cf6",
+      "threatRef": "6065b9de-c900-4fb1-ac37-54ba2df1e63e",
+      "title": "Cross-Site Request Forgery",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "6",
+      "tags": [
+        "web",
+        "csrf"
+      ],
+      "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application, causing state-changing actions to be pe..."
+    },
+    {
+      "id": "8ef8ef35-d230-4df9-b5fe-30decd39dd8d",
+      "threatRef": "2ecec0b1-6af8-49cc-ab9d-415332c36e34",
+      "title": "Insecure Direct Object Reference",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "score": "7",
+      "tags": [
+        "access-control",
+        "idor"
+      ],
+      "briefDescription": "An attacker directly accesses a resource by manipulating a reference such as a file path, database key, or URL parameter, bypassing access controls du..."
     }
   ]
 }
