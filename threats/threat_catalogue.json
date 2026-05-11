@@ -32,8 +32,8 @@
       "id": "cf6c0493-3ce9-490a-9b4a-abb4fee88ac9",
       "threatRef": "b3b75886-861f-41df-8649-2fc73004fa27",
       "title": "Credential Stuffing",
-      "modelType": "STRIDE",
-      "type": "Spoofing",
+      "modelType": "CIADIE",
+      "type": "Integrity",
       "score": "7",
       "tags": [
         "authentication",
