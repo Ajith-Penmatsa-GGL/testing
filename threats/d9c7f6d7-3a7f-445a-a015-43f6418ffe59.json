@@ -1,0 +1,15 @@
+{
+  "title": "Ajith' threat",
+  "modelType": "CIADIE",
+  "type": "Confidentiality",
+  "score": "10",
+  "tags": [
+    "Ajith",
+    "is",
+    "good",
+    "at",
+    "coding"
+  ],
+  "description": "Ajith is a threat to your software, because hes really good at coding and he will break your systems.",
+  "mitigation": "Keep him away from your software"
+}
