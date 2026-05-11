@@ -10,7 +10,8 @@
       "tags": [
         "injection",
         "web",
-        "database"
+        "database",
+        "ling"
       ],
       "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth..."
     },
