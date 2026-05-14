@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "3d16a2f0-1899-4f06-adc7-cc11c86ed269",
-      "threatRef": "33334284-06e7-4368-9af7-f6218ca94de9",
-      "title": "Sensitive Data Exposure via API Response",
-      "modelType": "STRIDE",
-      "type": "Information disclosure",
-      "score": "7",
-      "tags": [
-        "api",
-        "data-leakage"
-      ],
-      "briefDescription": "An API returns more data than the client needs, including sensitive fields such as passwords, tokens, or PII, which can be harvested by an attacker in..."
-    },
-    {
       "id": "341643d6-fb2a-486e-a426-0670a240b483",
       "threatRef": "8407d092-cd66-483e-ac7c-93d2d69c7634",
       "title": "Denial of Service via Resource Exhaustion",
