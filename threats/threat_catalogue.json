@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "ea5ea5c5-6e60-468f-82ee-e43615232071",
-      "threatRef": "c4cd2352-150f-4912-833c-a82540e39190",
-      "title": "Man-in-the-Middle Attack",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "score": "8",
-      "tags": [
-        "network",
-        "interception"
-      ],
-      "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge."
-    },
-    {
       "id": "cf6c0493-3ce9-490a-9b4a-abb4fee88ac9",
       "threatRef": "b3b75886-861f-41df-8649-2fc73004fa27",
       "title": "Credential Stuffing",
