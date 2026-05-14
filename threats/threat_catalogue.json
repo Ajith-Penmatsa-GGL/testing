@@ -1,20 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "6ec55941-489a-4449-81ef-873ac473e5fe",
-      "threatRef": "613132df-c403-4c5d-9e15-af3386d970cc",
-      "title": "Broken Object Level Authorisation",
-      "modelType": "STRIDE",
-      "type": "Elevation of privilege",
-      "score": "9",
-      "tags": [
-        "api",
-        "idor",
-        "authorisation"
-      ],
-      "briefDescription": "An attacker manipulates object identifiers in API requests to access records belonging to other users, bypassing authorisation checks that are missing..."
-    },
-    {
       "id": "dd16b7dd-32a9-412c-8c54-9a76fb6f2cf6",
       "threatRef": "6065b9de-c900-4fb1-ac37-54ba2df1e63e",
       "title": "Cross-Site Request Forgery",
