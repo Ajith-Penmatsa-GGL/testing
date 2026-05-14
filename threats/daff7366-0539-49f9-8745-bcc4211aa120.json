@@ -1,7 +1,8 @@
 {
+  "id": "22bbb822-fe7c-42ff-bf11-a52f8c954583",
   "title": "Man-in-the-Middle Attack",
-  "modelType": "STRIDE",
-  "type": "Tampering",
+  "modelType": "CIA",
+  "type": "Confidentiality",
   "score": "8",
   "tags": [
     "network",
