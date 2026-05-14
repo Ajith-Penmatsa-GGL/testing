@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "a84f4312-786c-425c-9e53-d3b18a01da75",
-      "threatRef": "dbdc6d5d-70cb-4f7e-8c97-10e71119d206",
-      "title": "Log Tampering",
-      "modelType": "STRIDE",
-      "type": "Repudiation",
-      "score": "6",
-      "tags": [
-        "logging",
-        "audit"
-      ],
-      "briefDescription": "An attacker modifies or deletes audit logs to hide malicious activity or deny having performed certain actions, undermining accountability."
-    },
-    {
       "id": "3d16a2f0-1899-4f06-adc7-cc11c86ed269",
       "threatRef": "33334284-06e7-4368-9af7-f6218ca94de9",
       "title": "Sensitive Data Exposure via API Response",
