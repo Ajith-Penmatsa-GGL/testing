@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "14407b45-15cf-4e38-a6c1-e40d7a14823b",
-      "threatRef": "254f9fcf-6367-4df7-a8d9-e6315888512f",
-      "title": "Privilege Escalation",
-      "modelType": "STRIDE",
-      "type": "Elevation of privilege",
-      "score": "9",
-      "tags": [
-        "access-control",
-        "authorisation"
-      ],
-      "briefDescription": "An attacker gains elevated access to resources that are normally protected from an application or user, exploiting bugs or misconfigurations in author..."
-    },
-    {
       "id": "a84f4312-786c-425c-9e53-d3b18a01da75",
       "threatRef": "dbdc6d5d-70cb-4f7e-8c97-10e71119d206",
       "title": "Log Tampering",
