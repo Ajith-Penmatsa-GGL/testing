@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "dd16b7dd-32a9-412c-8c54-9a76fb6f2cf6",
-      "threatRef": "6065b9de-c900-4fb1-ac37-54ba2df1e63e",
-      "title": "Cross-Site Request Forgery",
-      "modelType": "STRIDE",
-      "type": "Tampering",
-      "score": "6",
-      "tags": [
-        "web",
-        "csrf"
-      ],
-      "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application, causing state-changing actions to be pe..."
-    },
-    {
       "id": "8ef8ef35-d230-4df9-b5fe-30decd39dd8d",
       "threatRef": "2ecec0b1-6af8-49cc-ab9d-415332c36e34",
       "title": "Insecure Direct Object Reference",
