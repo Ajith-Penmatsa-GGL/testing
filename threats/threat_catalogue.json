@@ -19,15 +19,15 @@
       "id": "22bbb822-fe7c-42ff-bf11-a52f8c954583",
       "threatRef": "daff7366-0539-49f9-8745-bcc4211aa120",
       "title": "Man-in-the-Middle Attack",
-      "modelType": "STRIDE",
-      "type": "Tampering",
+      "modelType": "CIA",
+      "type": "Confidentiality",
       "score": "8",
       "tags": [
         "network",
         "interception"
       ],
       "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge.",
-      "hash": "ddfe7519c10aa183fec07b003914083cc97071b0196018b3ee11d9e6c284de66"
+      "hash": "8910fca99d52059c9caafcbdb98786835361b0762182a109d1c5c9c83530cbd8"
     },
     {
       "id": "7e3bca50-3083-40da-87e0-af37f2c3c5cb",
