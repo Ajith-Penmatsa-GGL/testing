@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "341643d6-fb2a-486e-a426-0670a240b483",
-      "threatRef": "8407d092-cd66-483e-ac7c-93d2d69c7634",
-      "title": "Denial of Service via Resource Exhaustion",
-      "modelType": "STRIDE",
-      "type": "Denial of service",
-      "score": "7",
-      "tags": [
-        "availability",
-        "dos"
-      ],
-      "briefDescription": "An attacker sends a high volume of requests or crafts expensive operations to exhaust server resources such as CPU, memory, or database connections, m..."
-    },
-    {
       "id": "6ec55941-489a-4449-81ef-873ac473e5fe",
       "threatRef": "613132df-c403-4c5d-9e15-af3386d970cc",
       "title": "Broken Object Level Authorisation",
