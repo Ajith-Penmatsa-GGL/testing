@@ -1,19 +1,6 @@
 {
   "catalogue": [
     {
-      "id": "cf6c0493-3ce9-490a-9b4a-abb4fee88ac9",
-      "threatRef": "b3b75886-861f-41df-8649-2fc73004fa27",
-      "title": "Credential Stuffing",
-      "modelType": "CIADIE",
-      "type": "Integrity",
-      "score": "7",
-      "tags": [
-        "authentication",
-        "brute-force"
-      ],
-      "briefDescription": "An attacker uses large sets of leaked username and password pairs to gain unauthorised access by automating login attempts across multiple services."
-    },
-    {
       "id": "14407b45-15cf-4e38-a6c1-e40d7a14823b",
       "threatRef": "254f9fcf-6367-4df7-a8d9-e6315888512f",
       "title": "Privilege Escalation",
