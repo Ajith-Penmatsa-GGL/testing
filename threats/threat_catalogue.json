@@ -4,8 +4,8 @@
       "id": "c4bb0e0e-960e-4166-a6b1-fff60ea7eec9",
       "threatRef": "a95ff0a8-dc98-4a01-a3a8-a76667caa2cb",
       "title": "SQL Injection",
-      "modelType": "STRIDE",
-      "type": "Tampering",
+      "modelType": "CIADIE",
+      "type": "Distributed",
       "score": "8",
       "tags": [
         "injection",
@@ -13,7 +13,7 @@
         "database"
       ],
       "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth...",
-      "hash": "4c16d52541aa6dec9703c2f9a5bcc0e7ca57e2f5d13019f8b3025398aeb815f3"
+      "hash": "c04d6ff08dc0a76ebd709499d00b477e63a768e8492f229bfa10cc5267156b20"
     },
     {
       "id": "bb684656-c0cc-41ec-85db-f319c6ab8dda",
