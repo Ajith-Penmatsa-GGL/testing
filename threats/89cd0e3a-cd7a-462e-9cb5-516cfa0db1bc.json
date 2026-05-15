@@ -1,0 +1,12 @@
+{
+  "title": "Log Tampering",
+  "modelType": "STRIDE",
+  "type": "Repudiation",
+  "score": "6",
+  "tags": [
+    "logging",
+    "audit"
+  ],
+  "description": "An attacker modifies or deletes audit logs to hide malicious activity or deny having performed certain actions, undermining accountability.",
+  "mitigation": "Write logs to an append-only or write-once store. Use centralised logging with integrity checking. Restrict log access to privileged roles only."
+}
