@@ -19,15 +19,15 @@
       "id": "bb684656-c0cc-41ec-85db-f319c6ab8dda",
       "threatRef": "23b1021c-8e80-4a9b-b7f0-eb8ad5949c64",
       "title": "Man-in-the-Middle Attack",
-      "modelType": "STRIDE",
-      "type": "Tampering",
+      "modelType": "LINDDUN",
+      "type": "Detectability",
       "score": "8",
       "tags": [
         "network",
         "interception"
       ],
       "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge.",
-      "hash": "ddfe7519c10aa183fec07b003914083cc97071b0196018b3ee11d9e6c284de66"
+      "hash": "96257204d3fa13301e9c90be75993c6a9854cc7c5167506eea1cd1ea5f8f2ca2"
     },
     {
       "id": "a451100e-4917-42da-99a3-59535cbeda4b",
