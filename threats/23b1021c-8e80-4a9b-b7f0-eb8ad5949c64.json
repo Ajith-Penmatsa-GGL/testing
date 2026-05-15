@@ -1,7 +1,8 @@
 {
+  "id": "bb684656-c0cc-41ec-85db-f319c6ab8dda",
   "title": "Man-in-the-Middle Attack",
-  "modelType": "STRIDE",
-  "type": "Tampering",
+  "modelType": "LINDDUN",
+  "type": "Detectability",
   "score": "8",
   "tags": [
     "network",
