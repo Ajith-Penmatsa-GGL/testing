@@ -1,0 +1,12 @@
+{
+  "title": "Insecure Direct Object Reference",
+  "modelType": "STRIDE",
+  "type": "Information disclosure",
+  "score": "7",
+  "tags": [
+    "access-control",
+    "idor"
+  ],
+  "description": "An attacker directly accesses a resource by manipulating a reference such as a file path, database key, or URL parameter, bypassing access controls due to missing server-side validation.",
+  "mitigation": "Enforce server-side access control checks on every resource request. Use indirect or randomised references rather than predictable identifiers."
+}
