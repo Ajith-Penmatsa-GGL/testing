@@ -1,7 +1,8 @@
 {
+  "id": "c4bb0e0e-960e-4166-a6b1-fff60ea7eec9",
   "title": "SQL Injection",
-  "modelType": "STRIDE",
-  "type": "Tampering",
+  "modelType": "CIADIE",
+  "type": "Distributed",
   "score": "8",
   "tags": [
     "injection",
