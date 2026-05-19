@@ -1,0 +1,13 @@
+{
+  "title": "Privilege Escalation via Misconfigured Role Assignment",
+  "modelType": "STRIDE",
+  "type": "Elevation of privilege",
+  "tags": [
+    "rbac",
+    "authorisation",
+    "admin"
+  ],
+  "score": "Critical",
+  "description": "The role assignment endpoint does not verify that the requesting user has the authority to grant the requested role. A regular user escalates themselves to administrator by crafting a direct API call.",
+  "mitigation": "Enforce server-side authorisation checks on all role-modification operations. Apply principle of least privilege. Require multi-party approval for admin role assignment. Audit all role changes."
+}
