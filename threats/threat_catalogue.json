@@ -1,3 +1,146 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "faed9270-504f-43e3-be4e-874f45afc862",
+      "threatRef": "1f047170-69af-41ba-8bdc-9b71f7736304",
+      "title": "SQL Injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "injection",
+        "web",
+        "database"
+      ],
+      "briefDescription": "An attacker injects malicious SQL statements into input fields that are passed to a backend database, allowing manipulation of queries, bypassing auth...",
+      "hash": "4c16d52541aa6dec9703c2f9a5bcc0e7ca57e2f5d13019f8b3025398aeb815f3"
+    },
+    {
+      "id": "7fe4a005-7d27-4c00-a602-e720f1ff5d8f",
+      "threatRef": "eb22b93a-a702-46a6-91fa-e880ebfd5db8",
+      "title": "Man-in-the-Middle Attack",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "8",
+      "tags": [
+        "network",
+        "interception"
+      ],
+      "briefDescription": "An attacker intercepts and potentially alters communication between two parties without their knowledge.",
+      "hash": "ddfe7519c10aa183fec07b003914083cc97071b0196018b3ee11d9e6c284de66"
+    },
+    {
+      "id": "03e68868-0968-454d-9797-8270fcbbca9f",
+      "threatRef": "1db2813f-f17d-4f03-8174-486f51165085",
+      "title": "Credential Stuffing",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "score": "7",
+      "tags": [
+        "authentication",
+        "brute-force"
+      ],
+      "briefDescription": "An attacker uses large sets of leaked username and password pairs to gain unauthorised access by automating login attempts across multiple services.",
+      "hash": "7671a603568813f59ae6c03d88d4073df31a8b3c2e1f3c3496866ed63487d121"
+    },
+    {
+      "id": "5a0e1c56-68df-4b14-8699-d574f24f137c",
+      "threatRef": "bfefdff7-4741-4528-bcca-6735d1901585",
+      "title": "Privilege Escalation",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "score": "9",
+      "tags": [
+        "access-control",
+        "authorisation"
+      ],
+      "briefDescription": "An attacker gains elevated access to resources that are normally protected from an application or user, exploiting bugs or misconfigurations in author...",
+      "hash": "05a0f6f812c1d10372da8596727be3cce7d20ba02bc3866410d59a7daa001603"
+    },
+    {
+      "id": "a4386c21-95a4-4972-b732-e423b17e89c7",
+      "threatRef": "f548024e-b0f0-4540-bed6-524ee311453f",
+      "title": "Log Tampering",
+      "modelType": "STRIDE",
+      "type": "Repudiation",
+      "score": "6",
+      "tags": [
+        "logging",
+        "audit"
+      ],
+      "briefDescription": "An attacker modifies or deletes audit logs to hide malicious activity or deny having performed certain actions, undermining accountability.",
+      "hash": "31f387b7e78f8f3ba1881c0192d40a0907407f80f032f494785506d7f4cd97ac"
+    },
+    {
+      "id": "e185d847-d6e9-4dc0-9f17-282248f062b3",
+      "threatRef": "ce0dcfa4-df59-482a-ba91-852c435e617b",
+      "title": "Sensitive Data Exposure via API Response",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "score": "7",
+      "tags": [
+        "api",
+        "data-leakage"
+      ],
+      "briefDescription": "An API returns more data than the client needs, including sensitive fields such as passwords, tokens, or PII, which can be harvested by an attacker in...",
+      "hash": "725ae5d05f82ce00fd8fc2cff6c7e828c4954cbe93382322e59837cd23635a6e"
+    },
+    {
+      "id": "369a0975-26f3-4d75-8019-36f830e787e9",
+      "threatRef": "b3f7df7a-29cf-4e1a-8faa-e28e7169143f",
+      "title": "Denial of Service via Resource Exhaustion",
+      "modelType": "STRIDE",
+      "type": "Denial of service",
+      "score": "7",
+      "tags": [
+        "availability",
+        "dos"
+      ],
+      "briefDescription": "An attacker sends a high volume of requests or crafts expensive operations to exhaust server resources such as CPU, memory, or database connections, m...",
+      "hash": "fa62c5e0eb169a9ab3047bcb56f668ae3336395bd3578eba88f295f4e66db693"
+    },
+    {
+      "id": "d630491b-9dd9-4fe3-925e-f7ef0634beaa",
+      "threatRef": "0ed75f56-2f60-4977-8b3d-85420153bcc5",
+      "title": "Broken Object Level Authorisation",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "score": "9",
+      "tags": [
+        "api",
+        "idor",
+        "authorisation"
+      ],
+      "briefDescription": "An attacker manipulates object identifiers in API requests to access records belonging to other users, bypassing authorisation checks that are missing...",
+      "hash": "4b31190c2234f7e444a9d6ee0f6fec930ed63fe75cb67beb872200a814e1c1fe"
+    },
+    {
+      "id": "e76278fb-ca63-4990-8fd7-b2ff9b94387c",
+      "threatRef": "106ab395-cf71-400b-b4f3-f03d143e6c42",
+      "title": "Cross-Site Request Forgery",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "6",
+      "tags": [
+        "web",
+        "csrf"
+      ],
+      "briefDescription": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application, causing state-changing actions to be pe...",
+      "hash": "3186ee5337f6a2b009e23607f715c9482c985b079706ffdc6b4a29a86dea2488"
+    },
+    {
+      "id": "54bc5085-5edd-4007-b2bf-0a30bbc85e7e",
+      "threatRef": "5c67fa34-29f6-4635-8531-698534cdebf1",
+      "title": "Insecure Direct Object Reference",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "score": "7",
+      "tags": [
+        "access-control",
+        "idor"
+      ],
+      "briefDescription": "An attacker directly accesses a resource by manipulating a reference such as a file path, database key, or URL parameter, bypassing access controls du...",
+      "hash": "bfaf46d60009a851a46882afbea4cf6b85bc5dd7482512c394641acebcaa1082"
+    }
+  ]
 }
