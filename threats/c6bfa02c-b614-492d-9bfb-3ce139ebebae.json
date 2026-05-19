@@ -1,0 +1,13 @@
+{
+  "title": "Man-in-the-Middle Tampers with API Responses",
+  "modelType": "STRIDE",
+  "type": "Tampering",
+  "tags": [
+    "tls",
+    "network",
+    "api"
+  ],
+  "score": "High",
+  "description": "Traffic between client and server traverses an untrusted network. An adversary in a privileged network position modifies API responses in transit to alter application behaviour.",
+  "mitigation": "Enforce TLS 1.2+ on all endpoints. Implement HTTP Strict Transport Security (HSTS) with preloading. Pin certificates in mobile clients. Validate response integrity using message signatures."
+}
