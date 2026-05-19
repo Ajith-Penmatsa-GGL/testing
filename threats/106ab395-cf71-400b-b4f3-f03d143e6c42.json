@@ -1,0 +1,12 @@
+{
+  "title": "Cross-Site Request Forgery",
+  "modelType": "STRIDE",
+  "type": "Tampering",
+  "score": "6",
+  "tags": [
+    "web",
+    "csrf"
+  ],
+  "description": "An attacker tricks an authenticated user into unknowingly submitting a malicious request to a web application, causing state-changing actions to be performed on their behalf.",
+  "mitigation": "Use CSRF tokens on all state-changing requests. Validate the Origin and Referer headers. Use SameSite cookie attribute."
+}
