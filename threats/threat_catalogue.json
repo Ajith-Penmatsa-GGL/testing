@@ -141,6 +141,156 @@
       ],
       "briefDescription": "An attacker directly accesses a resource by manipulating a reference such as a file path, database key, or URL parameter, bypassing access controls du...",
       "hash": "bfaf46d60009a851a46882afbea4cf6b85bc5dd7482512c394641acebcaa1082"
+    },
+    {
+      "id": "3edb4f0e-fc5b-48f8-a3de-270bb3d3caf7",
+      "threatRef": "d08da855-6ac6-43ab-93a1-0f52520ab772",
+      "title": "Attacker Spoofs User Identity via Stolen Session Token",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "tags": [
+        "authentication",
+        "session",
+        "identity"
+      ],
+      "score": "High",
+      "briefDescription": "An attacker intercepts or steals a valid session token and replays it to impersonate a legitimate user, bypassing authentication controls.",
+      "hash": "c2aefeb2d05128776c050fbff5ad755651f74af2c18c59a31711fe719e8f86a8"
+    },
+    {
+      "id": "16c07f2a-589a-4d3a-80f7-8e6fd23554f5",
+      "threatRef": "80624a31-4dbc-421b-99c4-68c73438da47",
+      "title": "DNS Cache Poisoning to Redirect Users",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "tags": [
+        "dns",
+        "network",
+        "phishing"
+      ],
+      "score": "High",
+      "briefDescription": "An attacker poisons a DNS resolver's cache to redirect users from a legitimate domain to a malicious server, enabling phishing or credential harvestin...",
+      "hash": "b555dd10bcfcdcb60e9ced7fcc464d2d2563d7203f177067c93240697ba85d2a"
+    },
+    {
+      "id": "c3d71706-791a-4ff5-ac90-489a44dc9ae7",
+      "threatRef": "a8b91832-a89d-40d8-8f21-0b63722ea5a5",
+      "title": "SQL Injection Modifies Database Records",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "tags": [
+        "sql",
+        "injection",
+        "database"
+      ],
+      "score": "Critical",
+      "briefDescription": "User-supplied input is concatenated directly into SQL queries, allowing an attacker to inject arbitrary SQL that modifies, deletes, or exfiltrates dat...",
+      "hash": "3ecf84483a6cc84e30e54b8a477fa42af7ad208df711731f482e6779f351f4bb"
+    },
+    {
+      "id": "e0d6b4cc-6603-47ad-b2c7-430e8ba4e625",
+      "threatRef": "60dd1e0d-7f6f-447b-a3f6-2021ec7768c1",
+      "title": "Man-in-the-Middle Tampers with API Responses",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "tags": [
+        "tls",
+        "network",
+        "api"
+      ],
+      "score": "High",
+      "briefDescription": "Traffic between client and server traverses an untrusted network. An adversary in a privileged network position modifies API responses in transit to a...",
+      "hash": "c5ebf099861aef9a6cd5c32ff8f58d73c6308c30a691a9b675db71e4a0c75e8c"
+    },
+    {
+      "id": "c3e3e1e3-3b9b-4931-86dd-c5e5c3c5d85d",
+      "threatRef": "7f379c43-2361-4a95-a818-4d90fef74754",
+      "title": "User Denies Submitting a Fraudulent Transaction",
+      "modelType": "STRIDE",
+      "type": "Repudiation",
+      "tags": [
+        "audit",
+        "logging",
+        "compliance"
+      ],
+      "score": "Medium",
+      "briefDescription": "A user performs a financial or sensitive action and later denies having done so. Without non-repudiation controls the organisation cannot prove the ac...",
+      "hash": "9204e42f6cc30448ad0cd4f95a2f9da551ddcd6e61c2defb6456394c76bb701c"
+    },
+    {
+      "id": "21449fd3-0644-48a0-9426-19f108359606",
+      "threatRef": "0c1e6345-5926-49c2-97b7-f3223392ea00",
+      "title": "Log Tampering Obscures Attacker Activity",
+      "modelType": "STRIDE",
+      "type": "Repudiation",
+      "tags": [
+        "logging",
+        "siem",
+        "forensics"
+      ],
+      "score": "High",
+      "briefDescription": "After gaining write access to the application host, an attacker modifies or deletes log files to erase evidence of their intrusion and subsequent acti...",
+      "hash": "e95994c218d130f16d432b1467232db6ff38230bdcc7a0a8c21280d8b61b9b91"
+    },
+    {
+      "id": "a0874042-3832-4585-8c9f-c8b0428c3dc0",
+      "threatRef": "d1e37107-ad8f-4700-8c05-759a755eefd1",
+      "title": "Sensitive PII Exposed in API Error Responses",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "tags": [
+        "pii",
+        "api",
+        "error-handling"
+      ],
+      "score": "Medium",
+      "briefDescription": "Unhandled exceptions return stack traces or internal error messages that contain personally identifiable information such as email addresses, user IDs...",
+      "hash": "642832314a480b3c1829ab80b1923dd307ab5c28f526d5c736a9cc4f9cf50764"
+    },
+    {
+      "id": "39f31a45-a91f-4200-b68d-e10a42b550b3",
+      "threatRef": "37587c5c-957b-4172-98ad-4617b8ed092c",
+      "title": "Insecure Direct Object Reference Leaks User Data",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "tags": [
+        "idor",
+        "authorisation",
+        "api"
+      ],
+      "score": "High",
+      "briefDescription": "API endpoints accept a resource ID as a path parameter without verifying the requesting user owns that resource. An attacker increments the ID to acce...",
+      "hash": "8cb59122500502b5f3b53aa080a92e08cc6b713111304c6e74e2768fde63ad9e"
+    },
+    {
+      "id": "b6e72d2c-2013-4460-ae97-28dcd1c49975",
+      "threatRef": "b439581c-5a28-49a6-8c3e-e2f2cda37c40",
+      "title": "Resource Exhaustion via Unbounded File Upload",
+      "modelType": "STRIDE",
+      "type": "Denial of service",
+      "tags": [
+        "upload",
+        "rate-limiting",
+        "availability"
+      ],
+      "score": "Medium",
+      "briefDescription": "The application allows file uploads without enforcing size or rate limits. An attacker repeatedly uploads large files, exhausting disk space and causi...",
+      "hash": "ca582de5f4e0461cf73c7b376ac3e543607ef14eee4a7ad459539307fcda2e3e"
+    },
+    {
+      "id": "c75ad79b-25c3-4bcb-a554-1e530fc772e7",
+      "threatRef": "ac5c1127-e3f4-47b6-8062-5942dcbc45b0",
+      "title": "Privilege Escalation via Misconfigured Role Assignment",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "tags": [
+        "rbac",
+        "authorisation",
+        "admin"
+      ],
+      "score": "Critical",
+      "briefDescription": "The role assignment endpoint does not verify that the requesting user has the authority to grant the requested role. A regular user escalates themselv...",
+      "hash": "54a74d20fad2bcf9dd8b7f0ca904e93a0474dd3e5d8fe83e778f541bf785b0c9"
     }
   ]
 }
