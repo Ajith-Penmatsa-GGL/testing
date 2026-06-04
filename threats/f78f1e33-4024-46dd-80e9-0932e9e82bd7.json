@@ -1,0 +1,13 @@
+{
+  "title": "DNS Cache Poisoning to Redirect Users",
+  "modelType": "STRIDE",
+  "type": "Spoofing",
+  "tags": [
+    "dns",
+    "network",
+    "phishing"
+  ],
+  "score": "High",
+  "description": "An attacker poisons a DNS resolver's cache to redirect users from a legitimate domain to a malicious server, enabling phishing or credential harvesting.",
+  "mitigation": "Enable DNSSEC on all authoritative zones. Use DNS-over-HTTPS (DoH) or DNS-over-TLS (DoT) for resolver communication. Monitor for unexpected DNS record changes."
+}
