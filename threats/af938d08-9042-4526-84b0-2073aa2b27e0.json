@@ -1,0 +1,13 @@
+{
+  "title": "Broken Object Level Authorisation",
+  "modelType": "STRIDE",
+  "type": "Elevation of privilege",
+  "score": "9",
+  "tags": [
+    "api",
+    "idor",
+    "authorisation"
+  ],
+  "description": "An attacker manipulates object identifiers in API requests to access records belonging to other users, bypassing authorisation checks that are missing or incorrectly implemented at the object level.",
+  "mitigation": "Validate authorisation for every object-level access server-side. Never rely on client-supplied IDs alone. Use indirect references where possible."
+}
