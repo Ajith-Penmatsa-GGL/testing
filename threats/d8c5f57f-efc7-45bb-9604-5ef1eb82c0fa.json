@@ -1,0 +1,13 @@
+{
+  "title": "Log Tampering Obscures Attacker Activity",
+  "modelType": "STRIDE",
+  "type": "Repudiation",
+  "tags": [
+    "logging",
+    "siem",
+    "forensics"
+  ],
+  "score": "High",
+  "description": "After gaining write access to the application host, an attacker modifies or deletes log files to erase evidence of their intrusion and subsequent actions.",
+  "mitigation": "Ship logs to a centralised, append-only SIEM immediately upon generation. Restrict log file permissions so the application process cannot delete or overwrite them. Alert on gaps in log continuity."
+}
