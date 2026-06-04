@@ -19,6 +19,13 @@
         "Mobile-apps"
       ],
       "modelRef": "58529bf5-dc80-439b-a416-a499a16a2ba8"
+    },
+    {
+      "id": "9a0782ae-769c-4bdf-83a0-82b74104703c",
+      "name": "Cryptocurrency Wallet(tempalte)",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
+      "tags": [],
+      "modelRef": "83c21cef-bd0d-46e9-a850-7a9f7ff5150c"
     }
   ]
 }
