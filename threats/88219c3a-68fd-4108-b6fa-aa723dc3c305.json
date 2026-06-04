@@ -1,0 +1,13 @@
+{
+  "title": "Resource Exhaustion via Unbounded File Upload",
+  "modelType": "STRIDE",
+  "type": "Denial of service",
+  "tags": [
+    "upload",
+    "rate-limiting",
+    "availability"
+  ],
+  "score": "Medium",
+  "description": "The application allows file uploads without enforcing size or rate limits. An attacker repeatedly uploads large files, exhausting disk space and causing service unavailability for all users.",
+  "mitigation": "Enforce maximum file size and per-user upload rate limits at the load balancer and application layer. Store uploads to object storage with quota controls. Alert on rapid storage growth."
+}
