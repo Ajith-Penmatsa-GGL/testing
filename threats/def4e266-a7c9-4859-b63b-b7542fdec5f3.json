@@ -1,0 +1,13 @@
+{
+  "title": "User Denies Submitting a Fraudulent Transaction",
+  "modelType": "STRIDE",
+  "type": "Repudiation",
+  "tags": [
+    "audit",
+    "logging",
+    "compliance"
+  ],
+  "score": "Medium",
+  "description": "A user performs a financial or sensitive action and later denies having done so. Without non-repudiation controls the organisation cannot prove the action occurred.",
+  "mitigation": "Capture immutable audit logs including authenticated user ID, timestamp, action performed, and IP address. Store logs in a write-once store. Require explicit user acknowledgement (e.g. digital signature) for high-value operations."
+}
