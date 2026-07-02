@@ -1,0 +1,12 @@
+{
+  "title": "Privilege Escalation",
+  "modelType": "STRIDE",
+  "type": "Elevation of privilege",
+  "score": "9",
+  "tags": [
+    "access-control",
+    "authorisation"
+  ],
+  "description": "An attacker gains elevated access to resources that are normally protected from an application or user, exploiting bugs or misconfigurations in authorisation logic.",
+  "mitigation": "Apply the principle of least privilege. Conduct regular access reviews. Validate authorisation on every server-side request."
+}
