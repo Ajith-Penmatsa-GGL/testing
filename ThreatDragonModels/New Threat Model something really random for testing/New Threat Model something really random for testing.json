@@ -1,0 +1,32 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "New Threat Model something really random for testing",
+    "owner": "",
+    "description": "",
+    "id": 0,
+    "requiredStandards": [
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "c3d4e5f6-a7b8-9012-cdef-123456789012",
+      "11111111-0001-0001-0001-000000000001"
+    ]
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
