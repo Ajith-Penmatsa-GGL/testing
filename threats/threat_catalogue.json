@@ -247,21 +247,6 @@
       "score": "Medium",
       "briefDescription": "The application allows file uploads without enforcing size or rate limits. An attacker repeatedly uploads large files, exhausting disk space and causi...",
       "hash": "ca582de5f4e0461cf73c7b376ac3e543607ef14eee4a7ad459539307fcda2e3e"
-    },
-    {
-      "id": "a727020b-9dc4-487f-86d1-96602724e599",
-      "threatRef": "c517635e-da26-4278-b376-bb29a80b5f89",
-      "title": "Privilege Escalation via Misconfigured Role Assignment",
-      "modelType": "STRIDE",
-      "type": "Elevation of privilege",
-      "tags": [
-        "rbac",
-        "authorisation",
-        "admin"
-      ],
-      "score": "Critical",
-      "briefDescription": "The role assignment endpoint does not verify that the requesting user has the authority to grant the requested role. A regular user escalates themselv...",
-      "hash": "54a74d20fad2bcf9dd8b7f0ca904e93a0474dd3e5d8fe83e778f541bf785b0c9"
     }
   ]
 }
