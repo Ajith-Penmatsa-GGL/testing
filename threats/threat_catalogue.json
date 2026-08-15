@@ -232,21 +232,6 @@
       "score": "High",
       "briefDescription": "API endpoints accept a resource ID as a path parameter without verifying the requesting user owns that resource. An attacker increments the ID to acce...",
       "hash": "8cb59122500502b5f3b53aa080a92e08cc6b713111304c6e74e2768fde63ad9e"
-    },
-    {
-      "id": "c7a83b98-ccbb-48a6-93f8-02ceacca9283",
-      "threatRef": "b3eb8b73-119c-45c3-aa86-7625666aad79",
-      "title": "Resource Exhaustion via Unbounded File Upload",
-      "modelType": "STRIDE",
-      "type": "Denial of service",
-      "tags": [
-        "upload",
-        "rate-limiting",
-        "availability"
-      ],
-      "score": "Medium",
-      "briefDescription": "The application allows file uploads without enforcing size or rate limits. An attacker repeatedly uploads large files, exhausting disk space and causi...",
-      "hash": "ca582de5f4e0461cf73c7b376ac3e543607ef14eee4a7ad459539307fcda2e3e"
     }
   ]
 }
