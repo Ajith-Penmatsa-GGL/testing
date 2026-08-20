@@ -1,0 +1,32 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "testing mitigaiton catalogue 2",
+    "owner": "Ajith",
+    "description": "",
+    "id": 0,
+    "requiredStandards": [
+      "ISO 27001",
+      "NIST SP 800-53",
+      "PCI DSS v4"
+    ]
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "mitigationTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
