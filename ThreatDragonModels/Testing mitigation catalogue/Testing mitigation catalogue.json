@@ -26,7 +26,7 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0,
-    "mitigationTop": 0
+    "threatTop": 1,
+    "mitigationTop": 2
   }
 }
