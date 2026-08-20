@@ -5,11 +5,7 @@
     "owner": "Ajith",
     "description": "",
     "id": 0,
-    "requiredStandards": [
-      "ISO 27001",
-      "NIST SP 800-53",
-      "PCI DSS v4"
-    ]
+    "requiredStandards": []
   },
   "detail": {
     "contributors": [],
@@ -25,8 +21,8 @@
       }
     ],
     "diagramTop": 1,
-    "mitigationTop": 0,
+    "mitigationTop": 3,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
