@@ -9,7 +9,8 @@
       "ISO 27001",
       "SOC 2 Type II",
       "HIPAA",
-      "GDPR"
+      "GDPR",
+      "ISO 22301"
     ]
   },
   "detail": {
@@ -174,7 +175,7 @@
                           "clause": "A.12.1"
                         }
                       ],
-                      "mandatory": false
+                      "mandatory": true
                     }
                   ],
                   "score": "7",
