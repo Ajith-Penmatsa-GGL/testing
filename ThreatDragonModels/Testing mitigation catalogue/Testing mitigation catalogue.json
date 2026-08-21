@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "359f9042-0146-4781-8342-3aa1d3a12b9a",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -154,6 +154,40 @@
                         {
                           "standard": "HIPAA",
                           "clause": "A.1.1"
+                        }
+                      ],
+                      "mandatory": false
+                    },
+                    {
+                      "mitigationId": "6a7ff88f-6218-4075-8620-7497861e2fbc",
+                      "number": 4,
+                      "title": "Enforce HTTPS everywhere",
+                      "description": "Redirect all HTTP traffic to HTTPS and set HSTS headers to prevent downgrade attacks.",
+                      "clauses": [
+                        {
+                          "standard": "HIPAA",
+                          "clause": "164.312(e)(1)"
+                        },
+                        {
+                          "standard": "ISO 27001",
+                          "clause": "A.10.1.1"
+                        }
+                      ],
+                      "mandatory": false
+                    },
+                    {
+                      "mitigationId": "580b9169-b4e2-49ae-9d60-b8f5bb8fa3c5",
+                      "number": 5,
+                      "title": "Centralised audit logging",
+                      "description": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
+                      "clauses": [
+                        {
+                          "standard": "ISO 27001",
+                          "clause": "A.12.4.1"
+                        },
+                        {
+                          "standard": "HIPAA",
+                          "clause": "164.312(b)"
                         }
                       ],
                       "mandatory": false
@@ -191,6 +225,8 @@
             "tools": {
               "items": [
                 "boundary",
+                "button-remove",
+                "boundary",
                 "button-remove"
               ],
               "name": null
@@ -202,6 +238,6 @@
     "diagramTop": 1,
     "reviewer": "",
     "threatTop": 3,
-    "mitigationTop": 3
+    "mitigationTop": 5
   }
 }
