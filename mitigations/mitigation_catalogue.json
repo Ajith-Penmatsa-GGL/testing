@@ -5,8 +5,8 @@
       "mitigationRef": "651c4b37-3bfd-4218-9406-845ef7bd393a",
       "title": "Enforce HTTPS everywhere",
       "status": "Recommended",
-      "briefDescription": "Redirect all HTTP traffic to HTTPS and set HSTS headers to prevent downgrade attacks.",
-      "hash": "e6a1ef1b9468634369f897229f499f2df08be79be9b5846c760e241b6f7845f3"
+      "briefDescription": "Redirect all HTTP traffic to HTTPS and set HSTS headers to prevent downgrade attacks.';kadsf;sdalk'c;slmc;'ksadmfkldsajf';sdalk';czsl,c';lsdkf'slakf';...",
+      "hash": "45f9042940fb9597057b1eb9292f99def55e16b7a2a1b1c7ee83fe2653568d28"
     },
     {
       "id": "4c7f9f84-47c9-49af-b9fc-d51872ebdcc4",
