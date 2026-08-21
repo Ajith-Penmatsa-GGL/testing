@@ -1,3 +1,39 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "201e3433-2548-460f-8e64-7e0a7467b6cf",
+      "mitigationRef": "35fb86ae-820c-4b9c-997b-7d077d4cc0e0",
+      "title": "Enforce HTTPS everywhere",
+      "briefDescription": "Redirect all HTTP traffic to HTTPS and set HSTS headers to prevent downgrade attacks.",
+      "hash": "e6a1ef1b9468634369f897229f499f2df08be79be9b5846c760e241b6f7845f3"
+    },
+    {
+      "id": "d14e59d6-cc27-4956-bcb0-556be075c34f",
+      "mitigationRef": "e79f2d80-60c2-4eb9-8024-2014268416af",
+      "title": "Parameterised queries for all database access",
+      "briefDescription": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
+      "hash": "dff84749a9b1a1532fbfbffb77bf20c1d4850640fabd2087f3ac1ad3f06990fe"
+    },
+    {
+      "id": "07558968-6da4-400c-a7b0-758e1b1524a8",
+      "mitigationRef": "be31e3aa-9232-48df-8c28-390171aea6ff",
+      "title": "Multi-factor authentication",
+      "briefDescription": "Require a second factor (TOTP, hardware key, or SMS) for all user logins, especially admin accounts.",
+      "hash": "c86a44fb16ca296ac694c78b6ede0ff4ebd7e57dbfe2f150d02e6b039f4febee"
+    },
+    {
+      "id": "b62419ce-9f40-4133-a963-36b74a495da3",
+      "mitigationRef": "a6140974-e754-4ca8-8888-ebdd5cd0b02d",
+      "title": "Input validation and output encoding",
+      "briefDescription": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+      "hash": "52d0fd6241287cbb44dab477e150b2e84731afbd47999b3527f85c7040951de2"
+    },
+    {
+      "id": "baaeb271-e895-47c6-8aa6-9d600b77bad0",
+      "mitigationRef": "0b03daea-c0d7-4fe9-8a68-351ce2f0e256",
+      "title": "Centralised audit logging",
+      "briefDescription": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
+      "hash": "434e9db8730f18595c308c9387898f4855e1ad3d2f1e23777133841e3f1e7ee4"
+    }
+  ]
 }
