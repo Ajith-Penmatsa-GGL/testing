@@ -22,12 +22,295 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 760,
+              "y": 300
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "554079c3-44b3-4153-906b-86031a7ad39e"
+                },
+                {
+                  "group": "right",
+                  "id": "12d28692-8a9b-4e85-969c-832fc0d16f2b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a9ac14c7-734e-4c81-b877-16a1f4068638"
+                },
+                {
+                  "group": "left",
+                  "id": "bb6524df-9f9f-499e-bd2a-456404839ee6"
+                }
+              ]
+            },
+            "id": "083f765d-fa1f-427a-bad0-5b19610a2fc7",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "d816fc19-dbd2-4560-abf4-6884d2e15fad",
+                  "title": "Credential Stuffing",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker uses large sets of leaked username and password pairs to gain unauthorised access by automating login attempts across multiple services.",
+                  "mitigations": [
+                    {
+                      "mitigationId": "557e798c-f0a5-4396-ba36-7206d66ec32d",
+                      "number": 1,
+                      "title": "Multi-factor authentication",
+                      "description": "Require a second factor (TOTP, hardware key, or SMS) for all user logins, especially admin accounts.",
+                      "clauses": [
+                        {
+                          "standard": "HIPAA",
+                          "clause": "164.312(d)"
+                        },
+                        {
+                          "standard": "ISO 27001",
+                          "clause": "A.9.4.2"
+                        }
+                      ],
+                      "mandatory": true
+                    },
+                    {
+                      "mitigationId": "cd4017d2-3aeb-4a0d-8782-ccf4e620a613",
+                      "number": 2,
+                      "title": "testing",
+                      "description": "",
+                      "status": "Recommended",
+                      "clauses": [
+                        {
+                          "standard": "ISO 22301",
+                          "clause": "A.12.1"
+                        }
+                      ],
+                      "mandatory": false
+                    }
+                  ],
+                  "score": "7",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": false,
+                  "number": 1
+                },
+                {
+                  "id": "1bbce90a-70cc-46e6-9c12-a3790827ad0f",
+                  "title": "Attacker Spoofs User Identity via Stolen Session Token",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker intercepts or steals a valid session token and replays it to impersonate a legitimate user, bypassing authentication controls.",
+                  "mitigations": [],
+                  "score": "High",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": true,
+                  "number": 2
+                },
+                {
+                  "id": "9c402383-b54f-4323-826d-aa4249f8fa43",
+                  "title": "DNS Cache Poisoning to Redirect Users",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker poisons a DNS resolver's cache to redirect users from a legitimate domain to a malicious server, enabling phishing or credential harvesting.",
+                  "mitigations": [],
+                  "score": "High",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": true,
+                  "number": 3
+                },
+                {
+                  "id": "c6badc41-d1ff-4ff2-a939-d3e00a020b20",
+                  "title": "Credential Stuffing",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker uses large sets of leaked username and password pairs to gain unauthorised access by automating login attempts across multiple services.",
+                  "mitigations": [],
+                  "score": "7",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": true,
+                  "number": 1
+                },
+                {
+                  "id": "1d73ac7c-7465-4345-bb89-282b063e8fc0",
+                  "title": "Credential Stuffing",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker uses large sets of leaked username and password pairs to gain unauthorised access by automating login attempts across multiple services.",
+                  "mitigations": [],
+                  "score": "7",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": true,
+                  "number": 1
+                },
+                {
+                  "id": "7a6f287b-2018-4acf-ad4b-f0ca7bc2f5c1",
+                  "title": "Attacker Spoofs User Identity via Stolen Session Token",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker intercepts or steals a valid session token and replays it to impersonate a legitimate user, bypassing authentication controls.",
+                  "mitigations": [],
+                  "score": "High",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": true,
+                  "number": 2
+                },
+                {
+                  "id": "e939c31b-cc91-4467-97cd-4bb4b20dd8ac",
+                  "title": "DNS Cache Poisoning to Redirect Users",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker poisons a DNS resolver's cache to redirect users from a legitimate domain to a malicious server, enabling phishing or credential harvesting.",
+                  "mitigations": [],
+                  "score": "High",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": true,
+                  "number": 3
+                },
+                {
+                  "id": "22b50f6f-0b77-49d4-a44f-59e2ba9cd007",
+                  "title": "Attacker Spoofs User Identity via Stolen Session Token",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker intercepts or steals a valid session token and replays it to impersonate a legitimate user, bypassing authentication controls.",
+                  "mitigations": [],
+                  "score": "High",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": true,
+                  "number": 2
+                },
+                {
+                  "id": "3c3ac31f-850e-4b91-a2ce-102a9dc22a11",
+                  "title": "DNS Cache Poisoning to Redirect Users",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "description": "An attacker poisons a DNS resolver's cache to redirect users from a legitimate domain to a malicious server, enabling phishing or credential harvesting.",
+                  "mitigations": [],
+                  "score": "High",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "new": true,
+                  "number": 3
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
-    "mitigationTop": 0,
+    "mitigationTop": 2,
     "reviewer": "Ajith",
-    "threatTop": 0
+    "threatTop": 3
   }
 }
