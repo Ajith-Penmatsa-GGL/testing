@@ -1,0 +1,10 @@
+{
+  "title": "Input validation and output encoding",
+  "description": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+  "clauses": [
+    {
+      "standard": "OWASP Top 10",
+      "clause": "A03:2021"
+    }
+  ]
+}
