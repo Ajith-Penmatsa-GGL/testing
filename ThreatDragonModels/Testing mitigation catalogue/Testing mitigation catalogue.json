@@ -8,7 +8,8 @@
     "requiredStandards": [
       "11111111-0003-0003-0003-000000000003",
       "11111111-0004-0004-0004-000000000004",
-      "11111111-0005-0005-0005-000000000005"
+      "11111111-0005-0005-0005-000000000005",
+      "HIPAA"
     ]
   },
   "detail": {
@@ -156,7 +157,7 @@
                           "clause": "A.1.1"
                         }
                       ],
-                      "mandatory": false
+                      "mandatory": true
                     },
                     {
                       "mitigationId": "6a7ff88f-6218-4075-8620-7497861e2fbc",
@@ -173,7 +174,7 @@
                           "clause": "A.10.1.1"
                         }
                       ],
-                      "mandatory": false
+                      "mandatory": true
                     },
                     {
                       "mitigationId": "580b9169-b4e2-49ae-9d60-b8f5bb8fa3c5",
@@ -190,7 +191,7 @@
                           "clause": "164.312(b)"
                         }
                       ],
-                      "mandatory": false
+                      "mandatory": true
                     }
                   ],
                   "score": "High",
