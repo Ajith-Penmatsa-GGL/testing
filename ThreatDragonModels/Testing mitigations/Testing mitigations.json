@@ -5,13 +5,7 @@
     "owner": "Ajith",
     "description": "",
     "id": 0,
-    "requiredStandards": [
-      "ISO 27001",
-      "SOC 2 Type II",
-      "HIPAA",
-      "GDPR",
-      "ISO 22301"
-    ]
+    "requiredStandards": []
   },
   "detail": {
     "contributors": [],
@@ -161,7 +155,7 @@
                           "clause": "A.9.4.2"
                         }
                       ],
-                      "mandatory": true
+                      "mandatory": false
                     },
                     {
                       "mitigationId": "cd4017d2-3aeb-4a0d-8782-ccf4e620a613",
@@ -175,7 +169,7 @@
                           "clause": "A.12.1"
                         }
                       ],
-                      "mandatory": true
+                      "mandatory": false
                     }
                   ],
                   "score": "7",
