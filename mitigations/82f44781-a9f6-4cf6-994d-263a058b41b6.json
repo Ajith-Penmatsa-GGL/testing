@@ -1,0 +1,15 @@
+{
+  "title": "Centralised audit logging",
+  "status": "Recommended",
+  "description": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
+  "clauses": [
+    {
+      "standard": "ISO 27001",
+      "clause": "A.12.4.1"
+    },
+    {
+      "standard": "HIPAA",
+      "clause": "164.312(b)"
+    }
+  ]
+}
