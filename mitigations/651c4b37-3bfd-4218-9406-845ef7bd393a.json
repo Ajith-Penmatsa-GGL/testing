@@ -2,7 +2,7 @@
   "id": "c6b3b021-0e05-40a1-a849-5e0e3957214a",
   "title": "Enforce HTTPS everywhere",
   "status": "Recommended",
-  "description": "Redirect all HTTP traffic to HTTPS and set HSTS headers to prevent downgrade attacks.';kadsf;sdalk'c;slmc;'ksadmfkldsajf';sdalk';czsl,c';lsdkf'slakf';slac,'sd;lakf';",
+  "description": "Redirect all HTTP traffic to HTTPS and set HSTS headers to prevent downgrade attacks.",
   "clauses": [
     {
       "standard": "HIPAA",
