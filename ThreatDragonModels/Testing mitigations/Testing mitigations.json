@@ -5,7 +5,12 @@
     "owner": "Ajith",
     "description": "",
     "id": 0,
-    "requiredStandards": []
+    "requiredStandards": [
+      "NIST SP 800-53",
+      "PCI DSS v4",
+      "SOC 2 Type II",
+      "HIPAA"
+    ]
   },
   "detail": {
     "contributors": [],
@@ -155,7 +160,7 @@
                           "clause": "A.9.4.2"
                         }
                       ],
-                      "mandatory": false
+                      "mandatory": true
                     },
                     {
                       "mitigationId": "cd4017d2-3aeb-4a0d-8782-ccf4e620a613",
