@@ -3,7 +3,7 @@
   "summary": {
     "title": "Testing mitigations",
     "owner": "Ajith",
-    "description": "",
+    "description": "This model is used to test mitigatoin catalogue",
     "id": 0,
     "requiredStandards": [
       "NIST SP 800-53",
