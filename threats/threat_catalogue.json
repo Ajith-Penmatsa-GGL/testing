@@ -244,10 +244,7 @@
       "tags": [],
       "briefDescription": "",
       "hash": "1fd3458288bd2b9b876fdf5066232e47fd3a64e2cf53c1d5ff92acc1ae6dc70d",
-      "mitigationRefs": [
-        "d14e59d6-cc27-4956-bcb0-556be075c34f",
-        "b62419ce-9f40-4133-a963-36b74a495da3"
-      ]
+      "mitigationRefs": []
     }
   ]
 }
