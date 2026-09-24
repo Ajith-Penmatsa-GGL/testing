@@ -11,6 +11,7 @@
   ],
   "description": "Attacker intercepts unencrypted traffic between client and server to read or alter sensitive data.",
   "mitigationRefs": [
-    "201e3433-2548-460f-8e64-7e0a7467b6cf"
+    "201e3433-2548-460f-8e64-7e0a7467b6cf",
+    "b62419ce-9f40-4133-a963-36b74a495da3"
   ]
 }
