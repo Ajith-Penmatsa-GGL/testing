@@ -232,6 +232,22 @@
       "score": "High",
       "briefDescription": "API endpoints accept a resource ID as a path parameter without verifying the requesting user owns that resource. An attacker increments the ID to acce...",
       "hash": "8cb59122500502b5f3b53aa080a92e08cc6b713111304c6e74e2768fde63ad9e"
+    },
+    {
+      "id": "d57e4969-6049-4930-a77d-5b719fa5c6f0",
+      "threatRef": "7cb39ba7-c121-4e89-bf63-da8df736a4f3",
+      "title": "Testing threats with mitigation references",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "score": "123",
+      "severity": "High",
+      "tags": [],
+      "briefDescription": "",
+      "hash": "1fd3458288bd2b9b876fdf5066232e47fd3a64e2cf53c1d5ff92acc1ae6dc70d",
+      "mitigationRefs": [
+        "d14e59d6-cc27-4956-bcb0-556be075c34f",
+        "b62419ce-9f40-4133-a963-36b74a495da3"
+      ]
     }
   ]
 }
