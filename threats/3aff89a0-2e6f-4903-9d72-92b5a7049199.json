@@ -1,9 +1,10 @@
 {
+  "id": "a4d3691b-c846-4f42-b1df-280743c981d8",
   "title": "Man-in-the-middle attack",
   "modelType": "STRIDE",
   "type": "Information disclosure",
-  "severity": "High",
   "score": "",
+  "severity": "High",
   "tags": [
     "network",
     "transport"
