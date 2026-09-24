@@ -9,7 +9,8 @@
       "NIST SP 800-53",
       "PCI DSS v4",
       "SOC 2 Type II",
-      "HIPAA"
+      "HIPAA",
+      "ISO 345"
     ]
   },
   "detail": {
