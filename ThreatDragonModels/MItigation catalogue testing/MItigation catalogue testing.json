@@ -1,0 +1,23 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "MItigation catalogue testing",
+    "owner": "Ajtih",
+    "description": "testing mitigations",
+    "id": 0,
+    "requiredStandards": [
+      "NIST SP 800-53",
+      "PCI DSS v4",
+      "ISO 22301",
+      "FedRAMP"
+    ]
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "mitigationTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
