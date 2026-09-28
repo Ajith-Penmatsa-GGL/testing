@@ -1,0 +1,16 @@
+{
+  "title": "SQL injection",
+  "modelType": "STRIDE",
+  "type": "Tampering",
+  "severity": "Critical",
+  "score": "",
+  "tags": [
+    "database",
+    "injection"
+  ],
+  "description": "Attacker supplies crafted input that is concatenated into a SQL query, allowing data to be read, modified or deleted.",
+  "mitigationRefs": [
+    "f18e713b-005e-4c6e-8c77-31c093031e4b",
+    "ec74c1da-23b3-4496-adb0-89f93a46cdcc"
+  ]
+}
