@@ -1,9 +1,10 @@
 {
+  "id": "b62419ce-9f40-4133-a963-36b74a495da3",
   "title": "Input validation and output encoding",
   "description": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
   "clauses": [
     {
-      "standard": "OWASP Top 10",
+      "standard": "NIST SP 800-53",
       "clause": "A03:2021"
     }
   ]
