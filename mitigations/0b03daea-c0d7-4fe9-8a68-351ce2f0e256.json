@@ -1,4 +1,5 @@
 {
+  "id": "baaeb271-e895-47c6-8aa6-9d600b77bad0",
   "title": "Centralised audit logging",
   "description": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
   "clauses": [
