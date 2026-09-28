@@ -1,0 +1,12 @@
+{
+  "title": "Resource exhaustion via unbounded requests",
+  "modelType": "STRIDE",
+  "type": "Denial of service",
+  "severity": "Medium",
+  "score": "",
+  "tags": [
+    "availability"
+  ],
+  "description": "Attacker sends a high volume of expensive requests to exhaust CPU, memory or connections and make the service unavailable.",
+  "mitigationRefs": []
+}
