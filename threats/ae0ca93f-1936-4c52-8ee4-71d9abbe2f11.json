@@ -1,0 +1,15 @@
+{
+  "title": "No record of configuration changes",
+  "modelType": "STRIDE",
+  "type": "Repudiation",
+  "severity": "Medium",
+  "score": "",
+  "tags": [
+    "audit",
+    "configuration"
+  ],
+  "description": "Security-relevant settings are changed without any record of who made the change or when, preventing investigation.",
+  "mitigationRefs": [
+    "e7a5e130-aae3-495d-8cf9-5d0939041a3e"
+  ]
+}
