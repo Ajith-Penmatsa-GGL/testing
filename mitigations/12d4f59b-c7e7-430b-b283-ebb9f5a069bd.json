@@ -1,0 +1,10 @@
+{
+  "title": "Parameterised queries for all database access",
+  "description": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
+  "clauses": [
+    {
+      "standard": "SOC 2 Type II",
+      "clause": "A03:2021"
+    }
+  ]
+}
