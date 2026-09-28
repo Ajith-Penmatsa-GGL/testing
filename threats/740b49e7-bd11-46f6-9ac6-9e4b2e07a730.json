@@ -1,0 +1,16 @@
+{
+  "title": "NoSQL injection",
+  "modelType": "STRIDE",
+  "type": "Tampering",
+  "severity": "High",
+  "score": "",
+  "tags": [
+    "database",
+    "injection"
+  ],
+  "description": "Attacker supplies operator objects or crafted JSON in place of expected values, altering the meaning of a document database query.",
+  "mitigationRefs": [
+    "f18e713b-005e-4c6e-8c77-31c093031e4b",
+    "ec74c1da-23b3-4496-adb0-89f93a46cdcc"
+  ]
+}
