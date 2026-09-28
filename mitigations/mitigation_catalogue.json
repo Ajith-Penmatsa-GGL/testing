@@ -1,3 +1,39 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "4c26c297-461f-424c-aad8-dbe04ca8ec9d",
+      "mitigationRef": "d2b8657c-0c85-48c8-880c-fdec8f94dd65",
+      "title": "Enforce HTTPS everywhere",
+      "briefDescription": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
+      "hash": "43904ca3f3b88dcc469be67fc163c69a91c70a83e73575aa4afc80264b3a2dc5"
+    },
+    {
+      "id": "ec74c1da-23b3-4496-adb0-89f93a46cdcc",
+      "mitigationRef": "3d24d6d5-da2c-42bc-9d4b-7051561b8ce5",
+      "title": "Input validation and output encoding",
+      "briefDescription": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+      "hash": "52d0fd6241287cbb44dab477e150b2e84731afbd47999b3527f85c7040951de2"
+    },
+    {
+      "id": "f18e713b-005e-4c6e-8c77-31c093031e4b",
+      "mitigationRef": "12d4f59b-c7e7-430b-b283-ebb9f5a069bd",
+      "title": "Parameterised queries for all database access",
+      "briefDescription": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
+      "hash": "dff84749a9b1a1532fbfbffb77bf20c1d4850640fabd2087f3ac1ad3f06990fe"
+    },
+    {
+      "id": "949b5452-df5a-4235-85a7-50dc77e27e2c",
+      "mitigationRef": "24e22c55-e0a9-4f1c-9ec6-64c4e0c129d9",
+      "title": "Multi-factor authentication",
+      "briefDescription": "Require a second factor (TOTP, hardware key, or SMS) for all user logins, especially admin accounts.",
+      "hash": "c86a44fb16ca296ac694c78b6ede0ff4ebd7e57dbfe2f150d02e6b039f4febee"
+    },
+    {
+      "id": "e7a5e130-aae3-495d-8cf9-5d0939041a3e",
+      "mitigationRef": "5bdc7c0a-1398-4e31-a8a6-9b2dfc4bc9cb",
+      "title": "Centralised audit logging",
+      "briefDescription": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
+      "hash": "434e9db8730f18595c308c9387898f4855e1ad3d2f1e23777133841e3f1e7ee4"
+    }
+  ]
 }
