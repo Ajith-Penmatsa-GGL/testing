@@ -1,0 +1,15 @@
+{
+  "title": "Reflected script leaks user data to attacker",
+  "modelType": "STRIDE",
+  "type": "Information disclosure",
+  "severity": "Medium",
+  "score": "",
+  "tags": [
+    "web",
+    "injection"
+  ],
+  "description": "A crafted link reflects attacker script into the page, which reads data from the page and sends it to an attacker-controlled server.",
+  "mitigationRefs": [
+    "11c03d04-5551-4825-b7ae-ea6375bbb733"
+  ]
+}
