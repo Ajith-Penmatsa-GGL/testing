@@ -1,0 +1,16 @@
+{
+  "title": "Audit logs deleted or altered by an insider",
+  "modelType": "STRIDE",
+  "type": "Repudiation",
+  "severity": "High",
+  "score": "",
+  "tags": [
+    "audit",
+    "insider"
+  ],
+  "description": "A privileged insider erases or edits log entries to cover up unauthorised activity.",
+  "mitigationRefs": [
+    "47bb8265-d1aa-4e6c-a8b4-974f9273ea39",
+    "fc8777ab-31de-44c7-9a91-fb0cffc5cd9f"
+  ]
+}
