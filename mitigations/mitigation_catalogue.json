@@ -1,3 +1,44 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "a0172fff-79ea-477d-b1a7-cc1bb964de96",
+      "mitigationRef": "023eb7bc-6999-405f-aca1-b0c9ba74c80a",
+      "title": "Enforce HTTPS everywhere",
+      "status": "Implemented",
+      "briefDescription": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
+      "hash": "43904ca3f3b88dcc469be67fc163c69a91c70a83e73575aa4afc80264b3a2dc5"
+    },
+    {
+      "id": "85b890f3-bdc3-469a-a0dd-3e3045b1786f",
+      "mitigationRef": "30debd0e-2601-4208-b8e4-1229d76e62fa",
+      "title": "Input validation and output encoding",
+      "status": "Recommended",
+      "briefDescription": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+      "hash": "52d0fd6241287cbb44dab477e150b2e84731afbd47999b3527f85c7040951de2"
+    },
+    {
+      "id": "f108af89-8d89-4836-81d0-5a80b5f96a42",
+      "mitigationRef": "6f2113c7-f003-47bb-a300-68dcc1308fe6",
+      "title": "Parameterised queries for all database access",
+      "status": "Accepted",
+      "briefDescription": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
+      "hash": "dff84749a9b1a1532fbfbffb77bf20c1d4850640fabd2087f3ac1ad3f06990fe"
+    },
+    {
+      "id": "fc8777ab-31de-44c7-9a91-fb0cffc5cd9f",
+      "mitigationRef": "01530c2f-b45d-4b7e-a6c5-ec405fdeb163",
+      "title": "Multi-factor authentication",
+      "status": "Rejected",
+      "briefDescription": "Require a second factor (TOTP, hardware key, or SMS) for all user logins, especially admin accounts.",
+      "hash": "c86a44fb16ca296ac694c78b6ede0ff4ebd7e57dbfe2f150d02e6b039f4febee"
+    },
+    {
+      "id": "47bb8265-d1aa-4e6c-a8b4-974f9273ea39",
+      "mitigationRef": "3d49a536-bcfb-4ca6-bd0c-99c67e4eb8ab",
+      "title": "Centralised audit logging",
+      "status": "Not Applicable",
+      "briefDescription": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
+      "hash": "434e9db8730f18595c308c9387898f4855e1ad3d2f1e23777133841e3f1e7ee4"
+    }
+  ]
 }
