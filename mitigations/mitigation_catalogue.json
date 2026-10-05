@@ -13,7 +13,8 @@
       "mitigationRef": "e81916be-7aa5-4fa0-addb-1a3c00201225",
       "title": "Input validation and output encoding",
       "briefDescription": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
-      "hash": "52d0fd6241287cbb44dab477e150b2e84731afbd47999b3527f85c7040951de2"
+      "hash": "52d0fd6241287cbb44dab477e150b2e84731afbd47999b3527f85c7040951de2",
+      "status": "Rejected"
     },
     {
       "id": "0d7c2f19-e11d-4473-ba52-31bd6bfa785d",
