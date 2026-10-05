@@ -1,0 +1,16 @@
+{
+  "title": "Database contents dumped through injection",
+  "modelType": "STRIDE",
+  "type": "Information disclosure",
+  "severity": "Critical",
+  "score": "",
+  "tags": [
+    "database",
+    "injection"
+  ],
+  "description": "Attacker uses an injection flaw to extract tables of user records, password hashes or other stored secrets.",
+  "mitigationRefs": [
+    "f108af89-8d89-4836-81d0-5a80b5f96a42",
+    "47bb8265-d1aa-4e6c-a8b4-974f9273ea39"
+  ]
+}
