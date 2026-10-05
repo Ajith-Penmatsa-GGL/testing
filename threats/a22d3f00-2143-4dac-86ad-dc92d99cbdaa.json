@@ -1,0 +1,16 @@
+{
+  "title": "Man-in-the-middle attack",
+  "modelType": "STRIDE",
+  "type": "Information disclosure",
+  "score": "",
+  "severity": "High",
+  "tags": [
+    "network",
+    "transport"
+  ],
+  "description": "Attacker intercepts unencrypted traffic between client and server to read or alter sensitive data.",
+  "mitigationRefs": [
+    "a0172fff-79ea-477d-b1a7-cc1bb964de96",
+    "85b890f3-bdc3-469a-a0dd-3e3045b1786f"
+  ]
+}
