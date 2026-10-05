@@ -1,0 +1,16 @@
+{
+  "title": "Injection used to run commands with service privileges",
+  "modelType": "STRIDE",
+  "type": "Elevation of privilege",
+  "severity": "Critical",
+  "score": "",
+  "tags": [
+    "injection",
+    "authorization"
+  ],
+  "description": "Attacker exploits an injection flaw to execute commands or queries with the permissions of the application's service account.",
+  "mitigationRefs": [
+    "f108af89-8d89-4836-81d0-5a80b5f96a42",
+    "85b890f3-bdc3-469a-a0dd-3e3045b1786f"
+  ]
+}
