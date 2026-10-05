@@ -1,0 +1,16 @@
+{
+  "title": "Account takeover of a privileged user",
+  "modelType": "STRIDE",
+  "type": "Elevation of privilege",
+  "severity": "Critical",
+  "score": "",
+  "tags": [
+    "authentication",
+    "authorization"
+  ],
+  "description": "Attacker compromises a single-factor login for a user with elevated permissions and inherits all of their access.",
+  "mitigationRefs": [
+    "fc8777ab-31de-44c7-9a91-fb0cffc5cd9f",
+    "47bb8265-d1aa-4e6c-a8b4-974f9273ea39"
+  ]
+}
