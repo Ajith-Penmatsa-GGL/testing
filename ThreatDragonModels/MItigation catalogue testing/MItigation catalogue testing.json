@@ -23,12 +23,191 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 850,
+              "y": 250
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "bd962b92-5d1b-455b-827b-f3cfc08cdd77"
+                },
+                {
+                  "group": "right",
+                  "id": "d6fb67b1-8414-4935-9899-f6d9661cd9a1"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7fc8e781-2da5-4597-ad7c-df86f5147c33"
+                },
+                {
+                  "group": "left",
+                  "id": "bf9a3d8b-16bf-4359-8274-386c62c9ff63"
+                }
+              ]
+            },
+            "id": "3f160000-cd85-408b-9da7-09e85a813e62",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "83909be9-bd17-43b6-8c19-18218f49a362",
+                  "title": "Reflected script leaks user data to attacker",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "description": "A crafted link reflects attacker script into the page, which reads data from the page and sends it to an attacker-controlled server.",
+                  "mitigations": [
+                    {
+                      "mitigationId": "060de172-f23c-4e52-bac3-d5f9003e24ce",
+                      "number": 1,
+                      "title": "Input validation and output encoding",
+                      "description": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+                      "status": "Recommended",
+                      "clauses": [
+                        {
+                          "standard": "NIST SP 800-53",
+                          "clause": "A03:2021"
+                        }
+                      ],
+                      "mandatory": true
+                    },
+                    {
+                      "mitigationId": "78f12ad5-7f2c-436c-a044-3349e60f2b4d",
+                      "number": 2,
+                      "title": "Parameterised queries for all database access",
+                      "description": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
+                      "clauses": [
+                        {
+                          "standard": "SOC 2 Type II",
+                          "clause": "A03:2021"
+                        },
+                        {
+                          "standard": "NIST SP 800-53",
+                          "clause": "a.2.11"
+                        }
+                      ],
+                      "mandatory": true
+                    }
+                  ],
+                  "score": "",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "new": false,
+                  "number": 1
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
-    "mitigationTop": 0,
+    "mitigationTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
