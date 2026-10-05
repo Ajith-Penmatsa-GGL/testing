@@ -1,5 +1,7 @@
 {
+  "id": "4dbdeba4-f077-4683-9558-31b5564f58e8",
   "title": "Enforce HTTPS everywhere",
+  "status": "Recommended",
   "description": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
   "clauses": [
     {
