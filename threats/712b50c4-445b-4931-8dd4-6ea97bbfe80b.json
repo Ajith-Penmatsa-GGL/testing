@@ -1,0 +1,15 @@
+{
+  "title": "Parameter tampering in client requests",
+  "modelType": "STRIDE",
+  "type": "Tampering",
+  "severity": "High",
+  "score": "",
+  "tags": [
+    "web",
+    "input"
+  ],
+  "description": "Attacker modifies hidden form fields, query strings or request bodies to change prices, quantities or record ids the server trusts.",
+  "mitigationRefs": [
+    "85b890f3-bdc3-469a-a0dd-3e3045b1786f"
+  ]
+}
