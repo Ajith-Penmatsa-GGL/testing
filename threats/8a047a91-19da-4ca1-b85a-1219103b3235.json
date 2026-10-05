@@ -1,0 +1,14 @@
+{
+  "title": "User denies performing a sensitive action",
+  "modelType": "STRIDE",
+  "type": "Repudiation",
+  "severity": "Medium",
+  "score": "",
+  "tags": [
+    "audit"
+  ],
+  "description": "A user performs a privileged or destructive action and later denies it, with no reliable record to prove otherwise.",
+  "mitigationRefs": [
+    "47bb8265-d1aa-4e6c-a8b4-974f9273ea39"
+  ]
+}
