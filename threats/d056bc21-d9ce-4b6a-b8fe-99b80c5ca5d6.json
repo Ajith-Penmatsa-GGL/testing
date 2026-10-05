@@ -1,0 +1,16 @@
+{
+  "title": "Expensive queries triggered by crafted input",
+  "modelType": "STRIDE",
+  "type": "Denial of service",
+  "severity": "Medium",
+  "score": "",
+  "tags": [
+    "availability",
+    "database"
+  ],
+  "description": "Attacker submits input that produces very slow database queries or regular expressions, tying up server resources.",
+  "mitigationRefs": [
+    "85b890f3-bdc3-469a-a0dd-3e3045b1786f",
+    "f108af89-8d89-4836-81d0-5a80b5f96a42"
+  ]
+}
