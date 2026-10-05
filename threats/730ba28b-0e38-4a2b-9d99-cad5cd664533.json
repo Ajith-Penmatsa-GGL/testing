@@ -1,0 +1,15 @@
+{
+  "title": "Sensitive data exposed over plain HTTP",
+  "modelType": "STRIDE",
+  "type": "Information disclosure",
+  "severity": "High",
+  "score": "",
+  "tags": [
+    "network",
+    "privacy"
+  ],
+  "description": "Personal or financial data is sent over unencrypted HTTP, where anyone on the same network can read it.",
+  "mitigationRefs": [
+    "a0172fff-79ea-477d-b1a7-cc1bb964de96"
+  ]
+}
