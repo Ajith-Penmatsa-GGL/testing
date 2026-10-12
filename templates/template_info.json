@@ -26,6 +26,13 @@
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
       "tags": [],
       "modelRef": "5e943fea-a0f2-436a-858f-663f07cc1f62"
+    },
+    {
+      "id": "35279ecd-aeaf-48cb-b745-a6464cd71bb9",
+      "name": "MItigation catalogue testing",
+      "description": "testing mitigations",
+      "tags": [],
+      "modelRef": "2d010de6-3092-4481-9af7-c15669f10c89"
     }
   ]
 }
