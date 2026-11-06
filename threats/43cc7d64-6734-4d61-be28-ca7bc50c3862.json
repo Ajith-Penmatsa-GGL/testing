@@ -1,0 +1,15 @@
+{
+  "title": "Credential stuffing",
+  "modelType": "STRIDE",
+  "type": "Spoofing",
+  "severity": "High",
+  "score": "",
+  "tags": [
+    "authentication"
+  ],
+  "description": "Attacker uses username and password pairs leaked from other breaches to log in as legitimate users.",
+  "mitigationRefs": [
+    "c4d2d910-450a-4f5a-995d-7f1e2a95c612",
+    "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+  ]
+}
