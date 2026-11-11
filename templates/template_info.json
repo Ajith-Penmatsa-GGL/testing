@@ -15,6 +15,13 @@
       "description": "testing mitigations",
       "tags": [],
       "modelRef": "2d010de6-3092-4481-9af7-c15669f10c89"
+    },
+    {
+      "id": "24a3ffbb-aa3c-494c-8b94-1633dff869a9",
+      "name": "Cryptocurrency Wallet(tempalte)",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
+      "tags": [],
+      "modelRef": "84b3c80f-a747-4ad3-9e08-2e8f600799db"
     }
   ]
 }
