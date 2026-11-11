@@ -1,3 +1,406 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "4f0a8cfa-9fc1-446f-ba5b-b9d52b2ce733",
+      "threatRef": "a63bda4b-641f-485c-8961-5603a1be6e9d",
+      "title": "Man-in-the-middle attack",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "score": "",
+      "severity": "High",
+      "tags": [
+        "network",
+        "transport"
+      ],
+      "briefDescription": "Attacker intercepts unencrypted traffic between client and server to read or alter sensitive data.",
+      "hash": "0431fc23e9dab7ea84b3eb739dc83d6410f4ec857dc8cd39030df90e08f38d44",
+      "mitigationRefs": [
+        "708a8aa0-0336-4025-8500-658aa473dd70",
+        "176e4945-d1f6-4944-8b37-3e6462a93af1"
+      ]
+    },
+    {
+      "id": "d56d7823-c8ce-4eb7-bb28-d571bb39abb0",
+      "threatRef": "03948099-6e5c-415e-9037-adce66255b2e",
+      "title": "SQL injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "severity": "Critical",
+      "score": "",
+      "tags": [
+        "database",
+        "injection"
+      ],
+      "briefDescription": "Attacker supplies crafted input that is concatenated into a SQL query, allowing data to be read, modified or deleted.",
+      "hash": "ec939e5087b897ccb0f9f99dc509063ec812193fcf9c8e1133895f2cecf4653c",
+      "mitigationRefs": [
+        "25ff7e64-7415-4cc5-92e4-41cd5f952f26",
+        "176e4945-d1f6-4944-8b37-3e6462a93af1"
+      ]
+    },
+    {
+      "id": "0e5f36ba-c23a-4905-83e3-a8f0a22de250",
+      "threatRef": "de13feca-7b5f-419b-877e-fd0bb4c5a25d",
+      "title": "Credential stuffing",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "authentication"
+      ],
+      "briefDescription": "Attacker uses username and password pairs leaked from other breaches to log in as legitimate users.",
+      "hash": "6a8dec17b84b5c4e3bf2d9fb393c97b68503100e26581ed266856429c762879b",
+      "mitigationRefs": [
+        "c4d2d910-450a-4f5a-995d-7f1e2a95c612",
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+      ]
+    },
+    {
+      "id": "487d2b8e-ad4c-4c1b-829b-bf418ceb3ce2",
+      "threatRef": "435643f0-f18f-4bbe-b41e-7d4ca91f2b1e",
+      "title": "Cross-site scripting",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "web",
+        "injection"
+      ],
+      "briefDescription": "Attacker injects script into pages viewed by other users, allowing session theft or actions performed on their behalf.",
+      "hash": "90527d7b43bbfcf3cf7d874a4194bcbf1a1a2a50cebc51359656feafa985e9a7",
+      "mitigationRefs": [
+        "176e4945-d1f6-4944-8b37-3e6462a93af1"
+      ]
+    },
+    {
+      "id": "21cd3957-a4c6-41aa-b058-19e7f6aea4f7",
+      "threatRef": "85bb2086-6a21-4886-9499-33d941fbd3b2",
+      "title": "User denies performing a sensitive action",
+      "modelType": "STRIDE",
+      "type": "Repudiation",
+      "severity": "Medium",
+      "score": "",
+      "tags": [
+        "audit"
+      ],
+      "briefDescription": "A user performs a privileged or destructive action and later denies it, with no reliable record to prove otherwise.",
+      "hash": "ff9f6a2afcb5ceb3fe4131ec9f8c1324aefc7a64335923c4b175c8fa1334d889",
+      "mitigationRefs": [
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+      ]
+    },
+    {
+      "id": "f4cf9f97-5d7c-469e-862b-91566873c003",
+      "threatRef": "def7d354-828e-4279-a252-e1d4db9c0dab",
+      "title": "Privilege escalation through admin panel",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "severity": "Critical",
+      "score": "",
+      "tags": [
+        "authorization",
+        "admin"
+      ],
+      "briefDescription": "Attacker gains access to an admin account or admin-only functionality and uses it to take control of the system.",
+      "hash": "cba771ee553c7ca4a6319fd127efa2d9060c4bfbc12da6d19c8b8e1f3578b258",
+      "mitigationRefs": [
+        "c4d2d910-450a-4f5a-995d-7f1e2a95c612",
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+      ]
+    },
+    {
+      "id": "25b96c29-765b-4833-8a49-fe32470d09b0",
+      "threatRef": "fe598f2f-a968-4941-8dc5-0019399f506c",
+      "title": "Resource exhaustion via unbounded requests",
+      "modelType": "STRIDE",
+      "type": "Denial of service",
+      "severity": "Medium",
+      "score": "",
+      "tags": [
+        "availability"
+      ],
+      "briefDescription": "Attacker sends a high volume of expensive requests to exhaust CPU, memory or connections and make the service unavailable.",
+      "hash": "cfc396cc19e38e04aa10a293734eee8afb84284e4eafb6f9e35411e94d4df59a",
+      "mitigationRefs": []
+    },
+    {
+      "id": "1c8cba9d-826b-43f7-bba8-34e1ba3e0919",
+      "threatRef": "35c3112b-b99f-416f-8161-967036881266",
+      "title": "TEST - threat with a deleted mitigation",
+      "modelType": "STRIDE",
+      "type": "Denial of service",
+      "severity": "Low",
+      "score": "",
+      "tags": [
+        "test"
+      ],
+      "briefDescription": "Test entry only. References one real mitigation and one id that does not exist, to check the missing-reference display.",
+      "hash": "017a586d5002813a7c63c05c9ff146db1823e4daf59fbc0cb9da2194f376ec68",
+      "mitigationRefs": [
+        "708a8aa0-0336-4025-8500-658aa473dd70"
+      ]
+    },
+    {
+      "id": "1be8ba57-d554-43aa-8bb8-e33d62abebf1",
+      "threatRef": "14b6bfe5-a16e-4c56-98a2-ab9e00f021bd",
+      "title": "Session hijacking via stolen cookie",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "session",
+        "authentication"
+      ],
+      "briefDescription": "Attacker steals a session cookie over an insecure channel or via script injection and replays it to impersonate the user.",
+      "hash": "a4f792c38e5374dc61a3e9109ece3cc8f687e979461c1f027a207fb9d8212938",
+      "mitigationRefs": [
+        "708a8aa0-0336-4025-8500-658aa473dd70",
+        "176e4945-d1f6-4944-8b37-3e6462a93af1"
+      ]
+    },
+    {
+      "id": "10c8416c-057e-4444-8a6c-8fc4e1f826fa",
+      "threatRef": "b1816d8d-880d-4c7e-b1bf-4e5d16efac3e",
+      "title": "Phishing for administrator credentials",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "authentication",
+        "social-engineering"
+      ],
+      "briefDescription": "Attacker tricks an administrator into entering their credentials on a lookalike login page, then uses them to sign in.",
+      "hash": "1bbd36b22d2e5dad55f0b1c689402d47ab420f7036de78a8d2aea05780b35752",
+      "mitigationRefs": [
+        "c4d2d910-450a-4f5a-995d-7f1e2a95c612",
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+      ]
+    },
+    {
+      "id": "8a573e75-6e63-468f-8285-fcdc46a2d3fc",
+      "threatRef": "fdc3124b-bd88-4d3b-887f-59bc6ade5fd9",
+      "title": "Brute-force login attempts",
+      "modelType": "STRIDE",
+      "type": "Spoofing",
+      "severity": "Medium",
+      "score": "",
+      "tags": [
+        "authentication"
+      ],
+      "briefDescription": "Attacker repeatedly guesses passwords for a known username until one succeeds.",
+      "hash": "1549f14cd084adb8fc3c65051701cb772218b726e19eb6141b24c652f006a44f",
+      "mitigationRefs": [
+        "c4d2d910-450a-4f5a-995d-7f1e2a95c612",
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+      ]
+    },
+    {
+      "id": "47da0cab-0a8e-4530-9d5d-c9ff964e98f5",
+      "threatRef": "9faae18b-b17e-4a10-a389-e1ab1fa66942",
+      "title": "Parameter tampering in client requests",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "web",
+        "input"
+      ],
+      "briefDescription": "Attacker modifies hidden form fields, query strings or request bodies to change prices, quantities or record ids the server trusts.",
+      "hash": "5845eb4d587315d63c1a027234a6806ea78057c320ca8ea51dc80ece805ea02d",
+      "mitigationRefs": [
+        "176e4945-d1f6-4944-8b37-3e6462a93af1"
+      ]
+    },
+    {
+      "id": "502c8ae9-527a-4147-ae8b-7d36b204ecb1",
+      "threatRef": "1a0dc9d6-b291-4450-a177-0056bee8d12d",
+      "title": "Data altered in transit",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "network",
+        "transport"
+      ],
+      "briefDescription": "Attacker on the network path modifies API responses or payloads between services before they reach their destination.",
+      "hash": "ca296744b8fd36a3129c49196b49d8b1383cc28fdd194063c8f4a7e1ff1ebb87",
+      "mitigationRefs": [
+        "708a8aa0-0336-4025-8500-658aa473dd70"
+      ]
+    },
+    {
+      "id": "a4e1c8f0-6104-4238-97b2-65af8be74c70",
+      "threatRef": "5a048fcb-e69b-4244-b645-7f768120bb10",
+      "title": "NoSQL injection",
+      "modelType": "STRIDE",
+      "type": "Tampering",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "database",
+        "injection"
+      ],
+      "briefDescription": "Attacker supplies operator objects or crafted JSON in place of expected values, altering the meaning of a document database query.",
+      "hash": "92acadb9fabe4e143baf0b7dd0a65a2af60073454a1a2a82dc59420bbbee5f41",
+      "mitigationRefs": [
+        "25ff7e64-7415-4cc5-92e4-41cd5f952f26",
+        "176e4945-d1f6-4944-8b37-3e6462a93af1"
+      ]
+    },
+    {
+      "id": "02872cdd-e0df-4c0f-90c2-1bec823fcd6c",
+      "threatRef": "813d7ead-6d60-4518-b0d5-9cf775df7dc0",
+      "title": "Audit logs deleted or altered by an insider",
+      "modelType": "STRIDE",
+      "type": "Repudiation",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "audit",
+        "insider"
+      ],
+      "briefDescription": "A privileged insider erases or edits log entries to cover up unauthorised activity.",
+      "hash": "3f04212dbd83aa42c523cee57f248a0d95a1dbfb723e002b6923cdd118c46cff",
+      "mitigationRefs": [
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1",
+        "c4d2d910-450a-4f5a-995d-7f1e2a95c612"
+      ]
+    },
+    {
+      "id": "f6f62fec-112a-4141-ad09-b058618e5dc7",
+      "threatRef": "4ca2a659-150e-4b16-9f1a-1db09b39e213",
+      "title": "No record of configuration changes",
+      "modelType": "STRIDE",
+      "type": "Repudiation",
+      "severity": "Medium",
+      "score": "",
+      "tags": [
+        "audit",
+        "configuration"
+      ],
+      "briefDescription": "Security-relevant settings are changed without any record of who made the change or when, preventing investigation.",
+      "hash": "dbd04d509fc10fccdf7caa92087b42771b2d65cb9eca2403cf067066cbebcff1",
+      "mitigationRefs": [
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+      ]
+    },
+    {
+      "id": "e6818a58-b64e-40cc-896c-51859d5fc31c",
+      "threatRef": "1c958c13-a6c4-4469-a492-36c42d58a57c",
+      "title": "Sensitive data exposed over plain HTTP",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "severity": "High",
+      "score": "",
+      "tags": [
+        "network",
+        "privacy"
+      ],
+      "briefDescription": "Personal or financial data is sent over unencrypted HTTP, where anyone on the same network can read it.",
+      "hash": "c1fa14be08ae881626456f0ea54484d87ff6dc0a481a8800b4bba47c87415e9b",
+      "mitigationRefs": [
+        "708a8aa0-0336-4025-8500-658aa473dd70"
+      ]
+    },
+    {
+      "id": "3191b960-e74a-4a59-ae31-990ced5c8137",
+      "threatRef": "37a4c201-a3ca-4486-a438-3f4a4d6ef36c",
+      "title": "Database contents dumped through injection",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "severity": "Critical",
+      "score": "",
+      "tags": [
+        "database",
+        "injection"
+      ],
+      "briefDescription": "Attacker uses an injection flaw to extract tables of user records, password hashes or other stored secrets.",
+      "hash": "28f3dacae534a44c4decfb8507602c9f1e82b0b63dcb72085e8c11595a17679b",
+      "mitigationRefs": [
+        "25ff7e64-7415-4cc5-92e4-41cd5f952f26",
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+      ]
+    },
+    {
+      "id": "18f5aff9-a71a-4e4d-97ec-53c1a421c7bd",
+      "threatRef": "d243fdc6-c012-4b57-a217-87f612f490f5",
+      "title": "Reflected script leaks user data to attacker",
+      "modelType": "STRIDE",
+      "type": "Information disclosure",
+      "severity": "Medium",
+      "score": "",
+      "tags": [
+        "web",
+        "injection"
+      ],
+      "briefDescription": "A crafted link reflects attacker script into the page, which reads data from the page and sends it to an attacker-controlled server.",
+      "hash": "dd8df19a2c28bcefb8174cdd8c9291aa6e0a7ab64748c5d4d0ec3f7d952f67f3",
+      "mitigationRefs": [
+        "176e4945-d1f6-4944-8b37-3e6462a93af1"
+      ]
+    },
+    {
+      "id": "e7054fb3-e730-4803-b93c-d3807767f00d",
+      "threatRef": "61d89d03-bbb4-4fe5-9caa-ef8f88fd0f8d",
+      "title": "Expensive queries triggered by crafted input",
+      "modelType": "STRIDE",
+      "type": "Denial of service",
+      "severity": "Medium",
+      "score": "",
+      "tags": [
+        "availability",
+        "database"
+      ],
+      "briefDescription": "Attacker submits input that produces very slow database queries or regular expressions, tying up server resources.",
+      "hash": "0dc550b508d2748986f9c5949209dfcb1921255e9911588531d3670b55db6fff",
+      "mitigationRefs": [
+        "176e4945-d1f6-4944-8b37-3e6462a93af1",
+        "25ff7e64-7415-4cc5-92e4-41cd5f952f26"
+      ]
+    },
+    {
+      "id": "6610afab-53c2-48f4-aef9-64535f931dcd",
+      "threatRef": "38b6675b-57de-442a-b682-027429d6381c",
+      "title": "Account takeover of a privileged user",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "severity": "Critical",
+      "score": "",
+      "tags": [
+        "authentication",
+        "authorization"
+      ],
+      "briefDescription": "Attacker compromises a single-factor login for a user with elevated permissions and inherits all of their access.",
+      "hash": "03bc723f8f256d8902f1bba72fb4114e89355079b7aa118b9236eda8154ad507",
+      "mitigationRefs": [
+        "c4d2d910-450a-4f5a-995d-7f1e2a95c612",
+        "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+      ]
+    },
+    {
+      "id": "53bb89d8-ed2b-4abf-8c3e-6f5de3810d1f",
+      "threatRef": "36ba6964-eeb1-445d-a3a7-08de0ec41aa2",
+      "title": "Injection used to run commands with service privileges",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "severity": "Critical",
+      "score": "",
+      "tags": [
+        "injection",
+        "authorization"
+      ],
+      "briefDescription": "Attacker exploits an injection flaw to execute commands or queries with the permissions of the application's service account.",
+      "hash": "3866f8864b446681cd4f217fe2f1b4f6cd59cca62b9f4df568c385ce15000fd8",
+      "mitigationRefs": [
+        "25ff7e64-7415-4cc5-92e4-41cd5f952f26",
+        "176e4945-d1f6-4944-8b37-3e6462a93af1"
+      ]
+    }
+  ]
 }
