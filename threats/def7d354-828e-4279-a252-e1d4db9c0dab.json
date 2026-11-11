@@ -1,0 +1,16 @@
+{
+  "title": "Privilege escalation through admin panel",
+  "modelType": "STRIDE",
+  "type": "Elevation of privilege",
+  "severity": "Critical",
+  "score": "",
+  "tags": [
+    "authorization",
+    "admin"
+  ],
+  "description": "Attacker gains access to an admin account or admin-only functionality and uses it to take control of the system.",
+  "mitigationRefs": [
+    "c4d2d910-450a-4f5a-995d-7f1e2a95c612",
+    "6ed78d16-9be5-40ae-bc76-627ecd1b13a1"
+  ]
+}
