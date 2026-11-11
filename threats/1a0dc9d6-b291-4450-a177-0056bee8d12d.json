@@ -1,0 +1,15 @@
+{
+  "title": "Data altered in transit",
+  "modelType": "STRIDE",
+  "type": "Tampering",
+  "severity": "High",
+  "score": "",
+  "tags": [
+    "network",
+    "transport"
+  ],
+  "description": "Attacker on the network path modifies API responses or payloads between services before they reach their destination.",
+  "mitigationRefs": [
+    "708a8aa0-0336-4025-8500-658aa473dd70"
+  ]
+}
