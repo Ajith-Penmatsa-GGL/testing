@@ -42,6 +42,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -125,7 +126,6 @@
               ]
             },
             "id": "3f160000-cd85-408b-9da7-09e85a813e62",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -175,7 +175,8 @@
                           "clause": "a.2.11"
                         }
                       ],
-                      "mandatory": true
+                      "mandatory": true,
+                      "status": "Accepted"
                     }
                   ],
                   "score": "",
@@ -189,13 +190,19 @@
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
