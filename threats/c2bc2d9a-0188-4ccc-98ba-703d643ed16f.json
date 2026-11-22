@@ -1,0 +1,16 @@
+{
+  "title": "Phishing for administrator credentials",
+  "modelType": "STRIDE",
+  "type": "Spoofing",
+  "severity": "High",
+  "score": "",
+  "tags": [
+    "authentication",
+    "social-engineering"
+  ],
+  "description": "Attacker tricks an administrator into entering their credentials on a lookalike login page, then uses them to sign in.",
+  "mitigationRefs": [
+    "211c8088-7be0-479b-a665-94978bc7ad05",
+    "35cc4cfa-c3c0-4271-83bd-875025c09b93"
+  ]
+}
