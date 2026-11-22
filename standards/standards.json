@@ -38,5 +38,9 @@
   {
     "id": "c37de9df-dd4c-481e-925a-9f81017e013f",
     "name": "ISO 27001"
+  },
+  {
+    "id": "73d8f417-7cf4-44a2-ade7-bf6308ba1a09",
+    "name": "PCI DSS"
   }
 ]
