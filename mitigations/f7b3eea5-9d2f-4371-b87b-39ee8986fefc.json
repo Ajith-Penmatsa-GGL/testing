@@ -3,10 +3,5 @@
   "title": "Enforce HTTPS everywhere",
   "status": "Implemented",
   "description": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
-  "clauses": [
-    {
-      "standard": "PCI DSS",
-      "clause": "3.5"
-    }
-  ]
+  "clauses": []
 }
