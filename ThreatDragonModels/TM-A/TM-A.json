@@ -161,17 +161,8 @@
                       "title": "Enforce HTTPS everywhere",
                       "description": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
                       "status": "Recommended",
-                      "clauses": [
-                        {
-                          "standard": "PCI DSS",
-                          "clause": "3.5"
-                        },
-                        {
-                          "standard": "ISO 27001",
-                          "clause": "A.5.1"
-                        }
-                      ],
-                      "mandatory": true
+                      "clauses": [],
+                      "mandatory": false
                     },
                     {
                       "mitigationId": "57022529-0971-4a25-9971-90f7924d93a5",
@@ -179,13 +170,8 @@
                       "title": "Input validation and output encoding",
                       "description": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
                       "status": "Recommended",
-                      "clauses": [
-                        {
-                          "standard": "ISO 27001",
-                          "clause": "A.5.1"
-                        }
-                      ],
-                      "mandatory": true
+                      "clauses": [],
+                      "mandatory": false
                     }
                   ],
                   "score": "",
@@ -199,15 +185,13 @@
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
             },
             "tools": {
               "items": [
-                "boundary",
-                "button-remove",
                 "boundary",
                 "button-remove"
               ],
