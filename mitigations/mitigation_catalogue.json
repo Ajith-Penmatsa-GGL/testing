@@ -8,7 +8,7 @@
       "briefDescription": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
       "hash": "43904ca3f3b88dcc469be67fc163c69a91c70a83e73575aa4afc80264b3a2dc5",
       "standards": [
-        "HIPAA",
+        "PCI DSS",
         "ISO 27001"
       ]
     },
