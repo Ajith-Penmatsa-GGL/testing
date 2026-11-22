@@ -1,0 +1,15 @@
+{
+  "title": "Brute-force login attempts",
+  "modelType": "STRIDE",
+  "type": "Spoofing",
+  "severity": "Medium",
+  "score": "",
+  "tags": [
+    "authentication"
+  ],
+  "description": "Attacker repeatedly guesses passwords for a known username until one succeeds.",
+  "mitigationRefs": [
+    "211c8088-7be0-479b-a665-94978bc7ad05",
+    "35cc4cfa-c3c0-4271-83bd-875025c09b93"
+  ]
+}
