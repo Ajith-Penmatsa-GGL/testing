@@ -23,12 +23,214 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 600,
+              "y": 130
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "485b2994-3355-4ab6-b9ea-45732c1124fc"
+                },
+                {
+                  "group": "right",
+                  "id": "b99f53e9-539b-4e27-8773-4308431983db"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ffa67c98-d809-4e9a-8327-78bf88f4e7f6"
+                },
+                {
+                  "group": "left",
+                  "id": "e93ef5e5-8b78-40b0-b14f-9c77e19139ef"
+                }
+              ]
+            },
+            "id": "24c5dd31-6155-416d-9ee7-6f3cc11a6d89",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "8b9aecd9-56b0-435b-9f95-3e492fdd2d29",
+                  "title": "Reflected script leaks user data to attacker",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "description": "A crafted link reflects attacker script into the page, which reads data from the page and sends it to an attacker-controlled server.",
+                  "mitigations": [
+                    {
+                      "mitigationId": "353e1cdd-cda0-4d5b-90f6-1a9983bd45b1",
+                      "number": 1,
+                      "title": "Input validation and output encoding",
+                      "description": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+                      "status": "Recommended",
+                      "clauses": [
+                        {
+                          "standard": "NIST SP 800-53",
+                          "clause": "A03:2021"
+                        }
+                      ],
+                      "mandatory": false
+                    },
+                    {
+                      "mitigationId": "d5bd6e0c-aa52-4600-a16f-e686727c43e4",
+                      "number": 2,
+                      "title": "",
+                      "description": "",
+                      "status": "Recommended",
+                      "clauses": [],
+                      "mandatory": false
+                    }
+                  ],
+                  "score": "",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "new": true,
+                  "number": 1
+                },
+                {
+                  "id": "ef63a0f2-e930-4b4b-879e-56725ea994bc",
+                  "title": "Man-in-the-middle attack",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "description": "Attacker intercepts unencrypted traffic between client and server to read or alter sensitive data.",
+                  "mitigations": [
+                    {
+                      "mitigationId": "a01222e5-ee39-40dd-994f-1b63318b91c1",
+                      "number": 3,
+                      "title": "Enforce HTTPS everywhere",
+                      "description": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
+                      "status": "Implemented",
+                      "clauses": [
+                        {
+                          "standard": "HIPAA",
+                          "clause": "164.312(e)(1)"
+                        },
+                        {
+                          "standard": "ISO 27001",
+                          "clause": "A.10.1.1"
+                        }
+                      ],
+                      "mandatory": false
+                    },
+                    {
+                      "mitigationId": "dec8ccad-6e7d-453c-9904-71813af3697e",
+                      "number": 4,
+                      "title": "Input validation and output encoding",
+                      "description": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+                      "status": "Recommended",
+                      "clauses": [
+                        {
+                          "standard": "NIST SP 800-53",
+                          "clause": "A03:2021"
+                        }
+                      ],
+                      "mandatory": false
+                    }
+                  ],
+                  "score": "",
+                  "status": "Open",
+                  "severity": "High",
+                  "new": true,
+                  "number": 2
+                }
+              ]
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
-    "mitigationTop": 0,
+    "mitigationTop": 4,
     "reviewer": "Ajith",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
