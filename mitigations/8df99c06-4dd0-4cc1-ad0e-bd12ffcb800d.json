@@ -1,11 +1,7 @@
 {
+  "id": "1c2c4c88-a08d-4626-bbbd-2b08a9a296fe",
   "title": "Parameterised queries for all database access",
   "status": "Accepted",
   "description": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
-  "clauses": [
-    {
-      "standard": "SOC 2 Type II",
-      "clause": "A03:2021"
-    }
-  ]
+  "clauses": []
 }
