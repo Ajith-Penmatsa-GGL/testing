@@ -1,0 +1,14 @@
+{
+  "title": "TEST - threat with a deleted mitigation",
+  "modelType": "STRIDE",
+  "type": "Denial of service",
+  "severity": "Low",
+  "score": "",
+  "tags": [
+    "test"
+  ],
+  "description": "Test entry only. References one real mitigation and one id that does not exist, to check the missing-reference display.",
+  "mitigationRefs": [
+    "67e6c36a-ec8f-4b18-b329-6586e631b02e"
+  ]
+}
