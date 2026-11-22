@@ -43,6 +43,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -126,7 +127,6 @@
               ]
             },
             "id": "24c5dd31-6155-416d-9ee7-6f3cc11a6d89",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -222,16 +222,86 @@
                   "severity": "High",
                   "new": true,
                   "number": 2
+                },
+                {
+                  "id": "2a7185e6-0930-4eee-9176-ba9f23d900d5",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigations": [],
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "97fe8351-75d6-431a-951c-bcdc13604b4a",
+                  "title": "Database contents dumped through injection",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "description": "Attacker uses an injection flaw to extract tables of user records, password hashes or other stored secrets.",
+                  "mitigations": [
+                    {
+                      "mitigationId": "d3e513dc-e557-47de-95c4-d40bc538aad4",
+                      "number": 5,
+                      "title": "Parameterised queries for all database access",
+                      "description": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
+                      "status": "Accepted",
+                      "clauses": [
+                        {
+                          "standard": "SOC 2 Type II",
+                          "clause": "A03:2021"
+                        }
+                      ],
+                      "mandatory": false
+                    },
+                    {
+                      "mitigationId": "c93d8c10-818a-495c-ae5b-2abf23388163",
+                      "number": 6,
+                      "title": "Centralised audit logging",
+                      "description": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
+                      "status": "Not Applicable",
+                      "clauses": [
+                        {
+                          "standard": "HIPAA",
+                          "clause": "164.312(b)"
+                        }
+                      ],
+                      "mandatory": false
+                    }
+                  ],
+                  "score": "",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "new": false,
+                  "number": 4
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ]
       }
     ],
     "diagramTop": 1,
-    "mitigationTop": 4,
+    "mitigationTop": 6,
     "reviewer": "Ajith",
-    "threatTop": 2
+    "threatTop": 4
   }
 }
