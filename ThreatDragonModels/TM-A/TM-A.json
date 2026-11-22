@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "c10f3f61-0f15-4555-9bcf-60c43d082a40",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -147,11 +147,67 @@
                   "new": true,
                   "number": 1,
                   "score": ""
+                },
+                {
+                  "id": "c63c91bf-719b-4343-b869-d5464225dc64",
+                  "title": "Man-in-the-middle attack",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "description": "Attacker intercepts unencrypted traffic between client and server to read or alter sensitive data.",
+                  "mitigations": [
+                    {
+                      "mitigationId": "47ffa94c-e03b-41ab-bae1-ddf86a0e4f4e",
+                      "number": 1,
+                      "title": "Enforce HTTPS everywhere",
+                      "description": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
+                      "status": "Recommended",
+                      "clauses": [
+                        {
+                          "standard": "PCI DSS",
+                          "clause": "3.5"
+                        },
+                        {
+                          "standard": "ISO 27001",
+                          "clause": "A.5.1"
+                        }
+                      ],
+                      "mandatory": true
+                    },
+                    {
+                      "mitigationId": "57022529-0971-4a25-9971-90f7924d93a5",
+                      "number": 2,
+                      "title": "Input validation and output encoding",
+                      "description": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+                      "status": "Recommended",
+                      "clauses": [
+                        {
+                          "standard": "ISO 27001",
+                          "clause": "A.5.1"
+                        }
+                      ],
+                      "mandatory": true
+                    }
+                  ],
+                  "score": "",
+                  "status": "Open",
+                  "severity": "High",
+                  "new": false,
+                  "number": 2
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
@@ -162,8 +218,8 @@
       }
     ],
     "diagramTop": 1,
-    "mitigationTop": 0,
+    "mitigationTop": 2,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
