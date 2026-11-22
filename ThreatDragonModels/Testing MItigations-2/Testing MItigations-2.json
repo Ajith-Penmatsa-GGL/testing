@@ -6,8 +6,7 @@
     "description": "testing mitigation cascade delete",
     "id": 0,
     "requiredStandards": [
-      "ISO 27001",
-      "NIST SP 800-53"
+      "ISO 27001"
     ]
   },
   "detail": {
@@ -159,7 +158,7 @@
                           "clause": "A03:2021"
                         }
                       ],
-                      "mandatory": true
+                      "mandatory": false
                     },
                     {
                       "mitigationId": "d5bd6e0c-aa52-4600-a16f-e686727c43e4",
@@ -214,7 +213,7 @@
                           "clause": "A03:2021"
                         }
                       ],
-                      "mandatory": true
+                      "mandatory": false
                     }
                   ],
                   "score": "",
