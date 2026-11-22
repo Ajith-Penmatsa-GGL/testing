@@ -4,7 +4,10 @@
     "title": "TM-A",
     "owner": "Ajith",
     "description": "",
-    "id": 0
+    "id": 0,
+    "requiredStandards": [
+      "ISO 27001"
+    ]
   },
   "detail": {
     "contributors": [],
