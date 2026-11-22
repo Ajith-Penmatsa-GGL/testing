@@ -20,7 +20,7 @@
       "briefDescription": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
       "hash": "52d0fd6241287cbb44dab477e150b2e84731afbd47999b3527f85c7040951de2",
       "standards": [
-        "NIST SP 800-53"
+        "ISO 27001"
       ]
     },
     {
