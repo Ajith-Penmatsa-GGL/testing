@@ -1,3 +1,62 @@
 {
-  "catalogue": []
+  "catalogue": [
+    {
+      "id": "67e6c36a-ec8f-4b18-b329-6586e631b02e",
+      "mitigationRef": "f7b3eea5-9d2f-4371-b87b-39ee8986fefc",
+      "title": "Enforce HTTPS everywhere",
+      "status": "Implemented",
+      "briefDescription": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
+      "hash": "43904ca3f3b88dcc469be67fc163c69a91c70a83e73575aa4afc80264b3a2dc5",
+      "standards": [
+        "HIPAA",
+        "ISO 27001"
+      ]
+    },
+    {
+      "id": "7785d3ad-956a-4e23-98d7-e9a429c62995",
+      "mitigationRef": "f63e23a8-ddb7-4de0-8fff-4f00ded4e9e1",
+      "title": "Input validation and output encoding",
+      "status": "Recommended",
+      "briefDescription": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+      "hash": "52d0fd6241287cbb44dab477e150b2e84731afbd47999b3527f85c7040951de2",
+      "standards": [
+        "NIST SP 800-53"
+      ]
+    },
+    {
+      "id": "1c2c4c88-a08d-4626-bbbd-2b08a9a296fe",
+      "mitigationRef": "8df99c06-4dd0-4cc1-ad0e-bd12ffcb800d",
+      "title": "Parameterised queries for all database access",
+      "status": "Accepted",
+      "briefDescription": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
+      "hash": "dff84749a9b1a1532fbfbffb77bf20c1d4850640fabd2087f3ac1ad3f06990fe",
+      "standards": [
+        "SOC 2 Type II"
+      ]
+    },
+    {
+      "id": "211c8088-7be0-479b-a665-94978bc7ad05",
+      "mitigationRef": "7191cd8f-1b4b-46f9-9e1f-27835e21f3d2",
+      "title": "Multi-factor authentication",
+      "status": "Rejected",
+      "briefDescription": "Require a second factor (TOTP, hardware key, or SMS) for all user logins, especially admin accounts.",
+      "hash": "c86a44fb16ca296ac694c78b6ede0ff4ebd7e57dbfe2f150d02e6b039f4febee",
+      "standards": [
+        "HIPAA",
+        "ISO 27001"
+      ]
+    },
+    {
+      "id": "35cc4cfa-c3c0-4271-83bd-875025c09b93",
+      "mitigationRef": "dd368a87-0a0e-42f7-8aa4-93cfecd98f27",
+      "title": "Centralised audit logging",
+      "status": "Not Applicable",
+      "briefDescription": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
+      "hash": "434e9db8730f18595c308c9387898f4855e1ad3d2f1e23777133841e3f1e7ee4",
+      "standards": [
+        "ISO 27001",
+        "HIPAA"
+      ]
+    }
+  ]
 }
