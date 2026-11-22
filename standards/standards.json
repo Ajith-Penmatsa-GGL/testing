@@ -42,5 +42,9 @@
   {
     "id": "73d8f417-7cf4-44a2-ade7-bf6308ba1a09",
     "name": "PCI DSS"
+  },
+  {
+    "id": "fb1538a0-f2f3-4600-824d-277081d240ed",
+    "name": "NIST SP 800-53"
   }
 ]
