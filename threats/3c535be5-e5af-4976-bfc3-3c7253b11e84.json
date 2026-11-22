@@ -1,0 +1,15 @@
+{
+  "title": "Cross-site scripting",
+  "modelType": "STRIDE",
+  "type": "Tampering",
+  "severity": "High",
+  "score": "",
+  "tags": [
+    "web",
+    "injection"
+  ],
+  "description": "Attacker injects script into pages viewed by other users, allowing session theft or actions performed on their behalf.",
+  "mitigationRefs": [
+    "7785d3ad-956a-4e23-98d7-e9a429c62995"
+  ]
+}
