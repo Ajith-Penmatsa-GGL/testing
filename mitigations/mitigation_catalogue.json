@@ -25,9 +25,7 @@
       "status": "Rejected",
       "briefDescription": "Require a second factor (TOTP, hardware key, or SMS) for all user logins, especially admin accounts.",
       "hash": "c86a44fb16ca296ac694c78b6ede0ff4ebd7e57dbfe2f150d02e6b039f4febee",
-      "standards": [
-        "HIPAA"
-      ]
+      "standards": []
     },
     {
       "id": "35cc4cfa-c3c0-4271-83bd-875025c09b93",
@@ -36,9 +34,7 @@
       "status": "Not Applicable",
       "briefDescription": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
       "hash": "434e9db8730f18595c308c9387898f4855e1ad3d2f1e23777133841e3f1e7ee4",
-      "standards": [
-        "HIPAA"
-      ]
+      "standards": []
     },
     {
       "id": "842a40fd-75c6-4b37-a095-c17ab5e3b818",
