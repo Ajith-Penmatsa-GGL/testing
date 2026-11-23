@@ -2,10 +2,5 @@
   "title": "Multi-factor authentication",
   "status": "Rejected",
   "description": "Require a second factor (TOTP, hardware key, or SMS) for all user logins, especially admin accounts.",
-  "clauses": [
-    {
-      "standard": "HIPAA",
-      "clause": "164.312(d)"
-    }
-  ]
+  "clauses": []
 }
