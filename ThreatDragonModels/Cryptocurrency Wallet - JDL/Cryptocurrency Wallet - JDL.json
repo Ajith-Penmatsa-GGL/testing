@@ -4,7 +4,11 @@
     "title": "Cryptocurrency Wallet - JDL",
     "owner": "",
     "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
-    "id": ""
+    "id": "",
+    "requiredStandards": [
+      "HIPAA",
+      "ISO 27001"
+    ]
   },
   "detail": {
     "contributors": [],
@@ -3426,7 +3430,7 @@
                           "clause": "164.312(b)"
                         }
                       ],
-                      "mandatory": false
+                      "mandatory": true
                     },
                     {
                       "mitigationId": "af879705-5228-40a6-b311-f703e2283183",
@@ -3440,7 +3444,7 @@
                           "clause": "1.12.1"
                         }
                       ],
-                      "mandatory": false
+                      "mandatory": true
                     }
                   ],
                   "score": "",
