@@ -10,6 +10,7 @@
   ],
   "description": "Attacker uses an injection flaw to extract tables of user records, password hashes or other stored secrets.",
   "mitigationRefs": [
-    "35cc4cfa-c3c0-4271-83bd-875025c09b93"
+    "35cc4cfa-c3c0-4271-83bd-875025c09b93",
+    "842a40fd-75c6-4b37-a095-c17ab5e3b818"
   ]
 }
