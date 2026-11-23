@@ -377,6 +377,25 @@
       "mitigationRefs": [
         "7785d3ad-956a-4e23-98d7-e9a429c62995"
       ]
+    },
+    {
+      "id": "3a3a59fb-8cdf-4ac8-936c-02a2c816fae2",
+      "threatRef": "8b73ea82-c6c4-43a7-820f-0b27c7170ead",
+      "title": "Account takeover of a privileged user",
+      "modelType": "STRIDE",
+      "type": "Elevation of privilege",
+      "severity": "Critical",
+      "score": "",
+      "tags": [
+        "authentication",
+        "authorization"
+      ],
+      "briefDescription": "Attacker compromises a single-factor login for a user with elevated permissions and inherits all of their access.",
+      "hash": "03bc723f8f256d8902f1bba72fb4114e89355079b7aa118b9236eda8154ad507",
+      "mitigationRefs": [
+        "211c8088-7be0-479b-a665-94978bc7ad05",
+        "35cc4cfa-c3c0-4271-83bd-875025c09b93"
+      ]
     }
   ]
 }
