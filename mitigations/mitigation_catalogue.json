@@ -41,6 +41,17 @@
       "standards": [
         "HIPAA"
       ]
+    },
+    {
+      "id": "842a40fd-75c6-4b37-a095-c17ab5e3b818",
+      "mitigationRef": "108998b4-150a-4691-bb91-30941a2175d1",
+      "title": "Parameterised queries for all database access",
+      "status": "Accepted",
+      "briefDescription": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
+      "hash": "dff84749a9b1a1532fbfbffb77bf20c1d4850640fabd2087f3ac1ad3f06990fe",
+      "standards": [
+        "SOC 2 Type II"
+      ]
     }
   ]
 }
