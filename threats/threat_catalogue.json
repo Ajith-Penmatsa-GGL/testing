@@ -34,7 +34,8 @@
       "briefDescription": "Attacker supplies crafted input that is concatenated into a SQL query, allowing data to be read, modified or deleted.",
       "hash": "ec939e5087b897ccb0f9f99dc509063ec812193fcf9c8e1133895f2cecf4653c",
       "mitigationRefs": [
-        "7785d3ad-956a-4e23-98d7-e9a429c62995"
+        "7785d3ad-956a-4e23-98d7-e9a429c62995",
+        "842a40fd-75c6-4b37-a095-c17ab5e3b818"
       ]
     },
     {
@@ -248,7 +249,8 @@
       "briefDescription": "Attacker supplies operator objects or crafted JSON in place of expected values, altering the meaning of a document database query.",
       "hash": "92acadb9fabe4e143baf0b7dd0a65a2af60073454a1a2a82dc59420bbbee5f41",
       "mitigationRefs": [
-        "7785d3ad-956a-4e23-98d7-e9a429c62995"
+        "7785d3ad-956a-4e23-98d7-e9a429c62995",
+        "842a40fd-75c6-4b37-a095-c17ab5e3b818"
       ]
     },
     {
@@ -321,7 +323,8 @@
       "briefDescription": "Attacker uses an injection flaw to extract tables of user records, password hashes or other stored secrets.",
       "hash": "28f3dacae534a44c4decfb8507602c9f1e82b0b63dcb72085e8c11595a17679b",
       "mitigationRefs": [
-        "35cc4cfa-c3c0-4271-83bd-875025c09b93"
+        "35cc4cfa-c3c0-4271-83bd-875025c09b93",
+        "842a40fd-75c6-4b37-a095-c17ab5e3b818"
       ]
     },
     {
@@ -357,7 +360,8 @@
       "briefDescription": "Attacker submits input that produces very slow database queries or regular expressions, tying up server resources.",
       "hash": "0dc550b508d2748986f9c5949209dfcb1921255e9911588531d3670b55db6fff",
       "mitigationRefs": [
-        "7785d3ad-956a-4e23-98d7-e9a429c62995"
+        "7785d3ad-956a-4e23-98d7-e9a429c62995",
+        "842a40fd-75c6-4b37-a095-c17ab5e3b818"
       ]
     },
     {
@@ -375,7 +379,8 @@
       "briefDescription": "Attacker exploits an injection flaw to execute commands or queries with the permissions of the application's service account.",
       "hash": "3866f8864b446681cd4f217fe2f1b4f6cd59cca62b9f4df568c385ce15000fd8",
       "mitigationRefs": [
-        "7785d3ad-956a-4e23-98d7-e9a429c62995"
+        "7785d3ad-956a-4e23-98d7-e9a429c62995",
+        "842a40fd-75c6-4b37-a095-c17ab5e3b818"
       ]
     },
     {
