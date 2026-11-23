@@ -6,7 +6,6 @@
     "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
     "id": "",
     "requiredStandards": [
-      "HIPAA",
       "ISO 27001"
     ]
   },
@@ -3430,7 +3429,7 @@
                           "clause": "164.312(b)"
                         }
                       ],
-                      "mandatory": true
+                      "mandatory": false
                     },
                     {
                       "mitigationId": "af879705-5228-40a6-b311-f703e2283183",
@@ -3821,7 +3820,7 @@
                           "clause": "164.312(d)"
                         }
                       ],
-                      "mandatory": true
+                      "mandatory": false
                     },
                     {
                       "mitigationId": "36b11e13-95aa-4cd2-a4d3-94f7b06c3225",
