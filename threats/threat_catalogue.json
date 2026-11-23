@@ -361,25 +361,6 @@
       ]
     },
     {
-      "id": "48890479-4fa4-44d7-a1fb-51f76143f785",
-      "threatRef": "9c43c268-7da4-4a94-96f9-a4765238860b",
-      "title": "Account takeover of a privileged user",
-      "modelType": "STRIDE",
-      "type": "Elevation of privilege",
-      "severity": "Critical",
-      "score": "",
-      "tags": [
-        "authentication",
-        "authorization"
-      ],
-      "briefDescription": "Attacker compromises a single-factor login for a user with elevated permissions and inherits all of their access.",
-      "hash": "03bc723f8f256d8902f1bba72fb4114e89355079b7aa118b9236eda8154ad507",
-      "mitigationRefs": [
-        "211c8088-7be0-479b-a665-94978bc7ad05",
-        "35cc4cfa-c3c0-4271-83bd-875025c09b93"
-      ]
-    },
-    {
       "id": "9813c841-2263-4b9a-a24d-5e083099addc",
       "threatRef": "d7fb99c6-7a5a-4620-ab06-b27938854a1d",
       "title": "Injection used to run commands with service privileges",
