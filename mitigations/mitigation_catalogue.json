@@ -21,15 +21,6 @@
       "standards": []
     },
     {
-      "id": "1c2c4c88-a08d-4626-bbbd-2b08a9a296fe",
-      "mitigationRef": "8df99c06-4dd0-4cc1-ad0e-bd12ffcb800d",
-      "title": "Parameterised queries for all database access",
-      "status": "Accepted",
-      "briefDescription": "Use prepared statements or parameterised queries to prevent SQL injection. Never concatenate user input into SQL strings.",
-      "hash": "dff84749a9b1a1532fbfbffb77bf20c1d4850640fabd2087f3ac1ad3f06990fe",
-      "standards": []
-    },
-    {
       "id": "211c8088-7be0-479b-a665-94978bc7ad05",
       "mitigationRef": "7191cd8f-1b4b-46f9-9e1f-27835e21f3d2",
       "title": "Multi-factor authentication",
