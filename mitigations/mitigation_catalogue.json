@@ -7,9 +7,7 @@
       "status": "Implemented",
       "briefDescription": "Redirect all traffic to HTTPS and set HSTS headers to prevent downgrade .",
       "hash": "43904ca3f3b88dcc469be67fc163c69a91c70a83e73575aa4afc80264b3a2dc5",
-      "standards": [
-        "ISO 27001"
-      ]
+      "standards": []
     },
     {
       "id": "7785d3ad-956a-4e23-98d7-e9a429c62995",
