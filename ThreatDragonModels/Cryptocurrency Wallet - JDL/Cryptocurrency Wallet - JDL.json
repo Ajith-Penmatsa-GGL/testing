@@ -3616,13 +3616,6 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3670,13 +3663,213 @@
               "cell": "ca4fbe1b-5c22-4322-b9fb-d21215d4f366",
               "port": "130207dd-5b6c-4b25-bdb2-ee70970bf5be"
             }
+          },
+          {
+            "position": {
+              "x": 700,
+              "y": 320
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e6cefffd-fee0-40e2-9f2c-d41ce14d040a"
+                },
+                {
+                  "group": "right",
+                  "id": "90ef6457-3f70-4441-8580-f9639eb39a88"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7f20c04e-27a1-4f02-ab3e-40dad3911af6"
+                },
+                {
+                  "group": "left",
+                  "id": "4f6a30b5-5890-44d2-9333-ed30e7e5b658"
+                }
+              ]
+            },
+            "id": "121394f4-2be9-4a9b-be5a-c34f96a14e4c",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "ff6ff881-58e3-4fb8-8a00-c3676f8fb0bc",
+                  "title": "Expensive queries triggered by crafted input",
+                  "type": "Denial of service",
+                  "modelType": "STRIDE",
+                  "description": "Attacker submits input that produces very slow database queries or regular expressions, tying up server resources.",
+                  "mitigations": [
+                    {
+                      "mitigationId": "5f0c2f0c-f894-40dd-a50f-294c6cbb6a61",
+                      "number": 6,
+                      "title": "Input validation and output encoding",
+                      "description": "Validate all input at the server side and encode output to prevent XSS. Use an allowlist approach where possible.",
+                      "status": "Recommended",
+                      "clauses": [],
+                      "mandatory": false
+                    }
+                  ],
+                  "score": "",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "new": true,
+                  "number": 4
+                },
+                {
+                  "id": "d9fbf2ec-d11d-4d14-8e0f-686df0d63432",
+                  "title": "Account takeover of a privileged user",
+                  "type": "Elevation of privilege",
+                  "modelType": "STRIDE",
+                  "description": "Attacker compromises a single-factor login for a user with elevated permissions and inherits all of their access.",
+                  "mitigations": [
+                    {
+                      "mitigationId": "1e35a8c6-bbe1-4f89-b700-fc490bbb32f2",
+                      "number": 7,
+                      "title": "Multi-factor authentication",
+                      "description": "Require a second factor (TOTP, hardware key, or SMS) for all user logins, especially admin accounts.",
+                      "status": "Rejected",
+                      "clauses": [
+                        {
+                          "standard": "HIPAA",
+                          "clause": "164.312(d)"
+                        }
+                      ],
+                      "mandatory": true
+                    },
+                    {
+                      "mitigationId": "36b11e13-95aa-4cd2-a4d3-94f7b06c3225",
+                      "number": 8,
+                      "title": "Centralised audit logging",
+                      "description": "Log all authentication events, privilege changes, and data access to a tamper-resistant centralised store.",
+                      "status": "Not Applicable",
+                      "clauses": [
+                        {
+                          "standard": "HIPAA",
+                          "clause": "164.312(b)"
+                        }
+                      ],
+                      "mandatory": false
+                    }
+                  ],
+                  "score": "",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "new": false,
+                  "number": 5
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 3,
-    "mitigationTop": 5
+    "threatTop": 5,
+    "mitigationTop": 8
   }
 }
