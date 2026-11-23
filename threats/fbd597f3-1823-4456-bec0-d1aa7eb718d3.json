@@ -10,6 +10,7 @@
   ],
   "description": "Attacker submits input that produces very slow database queries or regular expressions, tying up server resources.",
   "mitigationRefs": [
-    "7785d3ad-956a-4e23-98d7-e9a429c62995"
+    "7785d3ad-956a-4e23-98d7-e9a429c62995",
+    "842a40fd-75c6-4b37-a095-c17ab5e3b818"
   ]
 }
