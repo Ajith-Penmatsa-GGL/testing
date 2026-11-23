@@ -15,6 +15,13 @@
       "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
       "tags": [],
       "modelRef": "84b3c80f-a747-4ad3-9e08-2e8f600799db"
+    },
+    {
+      "id": "157eaa29-4d14-4bd9-ab8e-cbd954f1edd8",
+      "name": "Cryptocurrency Wallet - JDL (Template)",
+      "description": "This threat model has been provided by the OWASP Threat Model Cookbook:\nthreat-model-cookbook/Flow Diagram/cryptocurrency-wallet",
+      "tags": [],
+      "modelRef": "80692827-9e72-4cb7-83e1-cd682132d703"
     }
   ]
 }
